@@ -2,7 +2,7 @@
 {
     display: grid;
     margin: auto;
-    background-image: url("../../img/Landing1.jpg");
+    /* background-image: url("../../img/Landing1.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
