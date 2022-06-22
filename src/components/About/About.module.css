@@ -1,0 +1,64 @@
+.Background
+{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(233, 72, 44, 0.747), rgb(25, 93, 241, 0.7));
+    height: 130vh;
+}
+
+.Card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(143, 143, 143, 0.75);
+    height: 800px;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px 5px rgb(75, 75, 75, 0.5), 5px -5px 10px 5px rgb(75, 75, 75, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Text p
+{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.Text a
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.Technologies
+{
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0px 60px;
+}
+
+.Technologies a
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.Contact
+{
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0px 250px;
+}
+
+.Contact a
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

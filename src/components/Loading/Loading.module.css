@@ -1,0 +1,43 @@
+.Loading
+{
+    display: grid;
+    margin: auto;
+    background-image: url("../../img/Landing1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    line-height: 0%;
+}
+
+.Loading h1
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    background-image: url("../../img/UFO.png");
+    background-repeat: no-repeat;
+    transition: all;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector
+{
+    0%
+    {
+        transform: translateY(15px);
+    }
+    50%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(15px);
+    }
+}

@@ -1,0 +1,54 @@
+.Paginated
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.Paginated ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 15px 70px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(102, 102, 102, 0.5), rgba(0, 0, 0, 0.5));
+    border: 1px solid rgba(0, 0, 0, 0.452);
+}
+
+.Paginated ul li
+{
+    display: inline-block;
+    margin-right: auto;
+}
+
+.Paginated ul li button
+{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fff;
+    font: bold;
+    background: none;
+    border: none;
+    scroll-behavior: auto;
+}
+
+.Paginated ul li button:hover
+{
+    background: rgba(58, 58, 58, 0.822);
+    border-radius: 5px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.Paginated ul li .Active
+{
+    background: gray;
+    font-weight: bold;
+    color: #fff;
+}

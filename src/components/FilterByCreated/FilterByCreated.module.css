@@ -1,0 +1,31 @@
+.FilterByCreated
+{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SelectFilter
+{
+    display: flex;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100px;
+    max-height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(102, 102, 102, 0.89), rgba(0, 0, 0, 0.8));
+    color: #fff;
+    border: 1px solid rgba(44, 44, 44, 0.651);
+}
+
+.OptionFilter
+{
+    background: rgb(119, 118, 118);
+    color: #fff;
+}
+
+.SelectFilter:hover
+{
+    cursor: pointer;
+}
