@@ -9,7 +9,7 @@ function App() {
   return (
     <React.StrictMode>
       <Routes>
-        
+        <Route exact path="/" element={<Landing/>} />
       </Routes>
     </React.StrictMode>
   );
