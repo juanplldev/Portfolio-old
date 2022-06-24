@@ -21,22 +21,26 @@
     color: rgba(255, 255, 255, 0.867);
     padding: 10px;
     border-radius: 5px;
-    background: linear-gradient(to right, rgba(53, 33, 165, 0.7), rgba(25, 94, 241, 0.7));
+    background: linear-gradient(to right, rgba(152, 45, 179, 0.685), rgba(25, 93, 241, 0.747));
 }
 
 .Button a
 {
+    display: flex;
+    position: relative;
     text-decoration: none;
+    transition: all;
+    /* overflow: hidden; */
+    animation: move-vector 5s linear infinite;
 }
 
 .Continue
 {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    padding: 18px 72px;
-    margin: 220px;
-    margin: 8px;
+    padding: 18px 70px;
     font-size: 16px;
     border-radius: 50px;
     border: none;
@@ -44,24 +48,23 @@
     color: #fff;
     cursor: pointer;
     box-shadow: 1px 1px 30px -12px;
-    transition: all ;
-    position: relative;
+    transition: all;
     overflow: hidden;
-    animation: move-vector 5s linear infinite;
+    /* animation: move-vector 5s linear infinite; */
 }
 
 .Continue::after
 {
     content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: -242px;
     background: rgb(217, 64, 255);
     box-shadow: 1px 1px 30px -6px;
-    position: absolute;
     z-index: 1;
-    left: -242px;
-    top: 0;
-    transition: all 500ms ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .Continue:hover:after
@@ -101,5 +104,11 @@ video
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    transition: 2s;
     z-index: -1;
+}
+
+.Button:hover ~ .Background video
+{
+    filter: blur(4px);
 }

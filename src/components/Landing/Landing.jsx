@@ -9,8 +9,6 @@ function Landing()
 {
     return (
         <div className={styles.LandingPage}>
-            <video autoPlay loop src={Video}></video>
-            
             <div className={styles.Titles}>
                 <h1>Hi! I'm Juan.</h1>
                 <h1>Welcome to my portfolio!</h1>
@@ -20,6 +18,10 @@ function Landing()
                 <Link to="/home">
                     <button className={styles.Continue}><span>Know more</span></button>
                 </Link>
+            </div>
+            
+            <div className={styles.Background}>
+                <video autoPlay loop muted src={Video}></video>
             </div>
         </div>
     );
