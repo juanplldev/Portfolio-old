@@ -29,8 +29,6 @@
     display: flex;
     position: relative;
     text-decoration: none;
-    transition: all;
-    /* overflow: hidden; */
     animation: move-vector 5s linear infinite;
 }
 
