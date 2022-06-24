@@ -9,7 +9,7 @@ function Landing()
 {
     return (
         <div className={styles.LandingPage}>
-            <div className={styles.Titles}>
+            <div className={styles.Title}>
                 <h1>Hi! I'm Juan.</h1>
                 <h1>Welcome to my portfolio!</h1>
             </div>

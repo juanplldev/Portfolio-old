@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.Titles
+.Title
 {
     display: flex;
     flex-direction: column;
@@ -24,12 +24,14 @@
     background: linear-gradient(to right, rgba(152, 45, 179, 0.685), rgba(25, 93, 241, 0.747));
 }
 
+.Button
+{
+    animation: move-vector 5s linear infinite;
+}
+
 .Button a
 {
-    display: flex;
-    position: relative;
     text-decoration: none;
-    animation: move-vector 5s linear infinite;
 }
 
 .Continue
@@ -109,4 +111,19 @@ video
 .Button:hover ~ .Background video
 {
     filter: blur(4px);
+}
+
+@media (max-width: 650px)
+{
+    .Title
+    {
+        color:  red;
+        font-size: calc(22px - 50%);
+        width: 70%;
+        min-width: 240px;
+    }
+    .Continue span
+    {
+        font-size: 16px;
+    }
 }
