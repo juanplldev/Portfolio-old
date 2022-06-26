@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+
 .NavBar
 {
     display: block;
@@ -22,7 +25,7 @@
     align-items: center;
     width: 100px;
     margin-left: 1%;
-    background: red;
+    /* background: red; */
 }
 
 .Icon img
@@ -32,6 +35,69 @@
 
 .Menu
 {
-    background: red;
-    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background: red; */
+    width: 40%;
+}
+
+.Menu button
+{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    /* color: white; */
+    font-family: 'Play', sans-serif;
+}
+
+.Menu button:hover
+{
+    background: #212b38b6;
+    height: 70px;
+    color: white;
+}
+
+.RightButton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background: red; */
+    width: 5%;
+    margin-right: 1%;
+}
+
+.RightButton button
+{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    /* color: white; */
+    font-family: 'Play', sans-serif;
+}
+
+li
+{
+    list-style: none;
+}
+
+@media (max-width: 480px)
+{
+    .Menu
+    {
+        background: green;
+    }
 }

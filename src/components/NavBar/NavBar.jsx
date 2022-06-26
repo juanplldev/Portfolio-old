@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import styles from "./NavBar.module.css";
 import Icon from "../../img/TagIcon.png";
 
+
 function NavBar()
 {
     return (
@@ -17,7 +18,23 @@ function NavBar()
                 </div>
                 
                 <div className={styles.Menu}>
-
+                    <Link to="/about">
+                        <button className={styles.AboutMe}>About me</button>
+                    </Link>
+                    
+                    <Link to="/stack">
+                        <button className={styles.MyStack}>My stack</button>
+                    </Link>
+                    
+                    <Link to="projects">
+                        <button className={styles.Projects}>Projects</button>
+                    </Link>
+                </div>
+                
+                <div className={styles.RightButton}>
+                    <Link to="contact">
+                        <button className={styles.Contact}>Contact</button>
+                    </Link>
                 </div>
             </div>
         </div>

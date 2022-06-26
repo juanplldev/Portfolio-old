@@ -2,9 +2,10 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
 // Files
+import NavBar from "./components/NavBar/NavBar.jsx";
 import Landing from "./components/Landing/Landing.jsx";
 import Home from "./components/Home/Home.jsx";
-import NavBar from "./components/NavBar/NavBar.jsx";
+import About from "./components/About/About.jsx";
 import "./App.css";
 
 function App() {
