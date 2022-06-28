@@ -2,16 +2,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
 // Files
-import styles from "./Landing.module.css";
+import Home from "../Home/Home.jsx";
 import Video from "../../img/5.mp4";
+import styles from "./Landing.module.css";
 
 
 function Landing()
 {
     return (
-        <div className={styles.LandingPage}>
+        <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>Hi! I'm Juan.</h1>
+                <h1>Hi! I'm Juan</h1>
+                {/* <h1>Full Stack Web Developer</h1> */}
                 <h1>Welcome to my portfolio!</h1>
             </div>
             

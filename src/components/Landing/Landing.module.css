@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 
-.LandingPage
+.Container
 {
     display: flex;
     height: 100vh;
@@ -25,10 +25,10 @@
     background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
 }
 
-.Button
+/* .Button
 {
     animation: move-vector 5s linear infinite;
-}
+} */
 
 .Button a
 {
@@ -65,12 +65,13 @@
     background: linear-gradient(to right, #5affe6b0, #736effa9);
     box-shadow: 1px 1px 30px -6px;
     z-index: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 
 .Continue:hover:after
 {
     left: 0;
+    transition: all 1.2s ease-in-out;
 }
 
 .Continue span
@@ -98,7 +99,7 @@ video
     filter: blur(4px);
 }
 
-@keyframes move-vector
+/* @keyframes move-vector
 {
     0%
     {
@@ -112,7 +113,7 @@ video
     {
         transform: translateY(-15px);
     }
-}
+} */
 
 @media (max-width: 650px)
 {

@@ -9,7 +9,7 @@
     align-items: center;
     text-align: center;
     background: gray;
-    background: url("../../img/8.jpg");
+    background: url("../../img/8Rotated.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,18 +28,13 @@
     background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
 }
 
-.About
+.FirstStack
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 50%;
     height: auto;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Play', sans-serif;
+    margin-bottom: 40px;
     /* background: red; */
-}
-
-.P::first-letter
-{
-    font-weight: bold;
-    /* color: black; */
 }
