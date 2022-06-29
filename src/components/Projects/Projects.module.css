@@ -160,15 +160,15 @@
     }
     .Card
     {
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 300px;
     }
     .Layer, .Layer p
     {
-        font-size: 10px;
+        font-size: 15px;
     }
     .Links img
     {
-        width: 20px;
+        width: 30px;
     }
 }

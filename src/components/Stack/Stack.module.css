@@ -49,6 +49,7 @@
 
 .Icon
 {
+    display: flex;
     max-width: fit-content;
     height: auto;
     margin: 30px;
@@ -106,5 +107,13 @@
     .Stack
     {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .Stack
+    {
+        transform: scale(0.8);
     }
 }

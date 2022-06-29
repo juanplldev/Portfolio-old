@@ -30,7 +30,7 @@
 
 .About
 {
-    width: 50%;
+    width: 80%;
     height: auto;
     text-align: center;
     font-size: 25px;
@@ -42,4 +42,20 @@
 {
     font-weight: bold;
     /* color: black; */
+}
+
+@media (max-width: 550px)
+{
+    .About
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 420px)
+{
+    .About
+    {
+        font-size: 18px;
+    }
 }

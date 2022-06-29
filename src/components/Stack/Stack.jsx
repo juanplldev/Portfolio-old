@@ -29,7 +29,7 @@ function Stack()
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>My tack</h1>
+                <h1>My stack</h1>
             </div>
             
             <div className={styles.StackContainer}>
