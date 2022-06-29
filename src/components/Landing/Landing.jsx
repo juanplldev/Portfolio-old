@@ -2,7 +2,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 // Files
-import Home from "../Home/Home.jsx";
 import Video from "../../img/5.mp4";
 import styles from "./Landing.module.css";
 

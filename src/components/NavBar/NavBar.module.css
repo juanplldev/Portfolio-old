@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 
-.NavBar
+.Container
 {
     display: block;
     position: fixed;
     width: 100%;
     height: 70px;
     background: linear-gradient(to right bottom, #37465be5, #736effd0);
+    z-index: 2;
 }
 
-.Container
+.NavBar
 {
     display: flex;
     width: 100%;

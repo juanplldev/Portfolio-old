@@ -10,8 +10,8 @@ import CloseTagIcon from "../../img/CloseTagIcon.png";
 function NavBar()
 {
     return (
-        <div className={styles.NavBar}>
-            <div className={styles.Container}>
+        <div className={styles.Container}>
+            <div className={styles.NavBar}>
                 <div className={styles.Icon}>
                     <Link to="/">
                         <img src={OpenTagIcon} alt="Landing" />
