@@ -21,7 +21,7 @@ function Projects()
                     <img className={styles.Background} src={VideogamesImg} alt="Img"/>
                     
                     <div className={styles.Layer}>
-                        <h2>Videogames SPA</h2>
+                        <h2><a href="https://videogames-app-two.vercel.app">Videogames SPA</a></h2>
                         <p>
                             An encyclopedia of video games made as my individual project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
                         </p>
@@ -37,7 +37,7 @@ function Projects()
                     <img className={styles.Background} src={DigitalizArteImg} alt="Img"/>
                     
                     <div className={styles.Layer}>
-                        <h2>DigitalizArte</h2>
+                        <h2><a href="https://pg-frontend-eight.vercel.app">DigitalizArte</a></h2>
                         <p>
                             An art e-commerce with a small social network system made with six more co-workers as final project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
                         </p>

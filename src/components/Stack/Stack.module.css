@@ -54,6 +54,7 @@
     height: auto;
     margin: 30px;
     /* background: green; */
+    transition: all 0.2s;
 }
 
 .Icon p
@@ -65,6 +66,11 @@
 .Icon a
 {
     text-decoration: none;
+}
+
+.Icon:hover
+{
+    transform: scale(1.2);
 }
 
 @media (max-width: 1450px)
