@@ -4,7 +4,7 @@
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     background: gray;
@@ -29,12 +29,13 @@
 
 .IconsContainer
 {
-    /* background: red; */
     display: flex;
-    width: 30%;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    width: 30%;
+    margin-bottom: 30px;
+    /* background: red; */
 }
 
 .Icon img, .MailIcon img
@@ -63,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 
 .MailIcon a

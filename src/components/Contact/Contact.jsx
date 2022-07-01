@@ -10,13 +10,13 @@ import styles from "./Contact.module.css";
 
 function Contact()
 {
-    const [modal, setModal] = useState(false);
+    const [modalState, setModalState] = useState(false);
     
-    function handleModal(e)
+    function handleModalState(e)
     {
         e.preventDefault();
-        setModal(!modal);
-        console.log(modal);
+        setModalState(!modalState);
+        // console.log(modal);
     };
     
     return (
@@ -40,24 +40,16 @@ function Contact()
                 
                 <div className={styles.MailIcon}>
                     <a href="mailto:juanpablollorentej@gmail.com">
-                        <img src={MAIL} alt="E-mail" />
+                        <img src={MAIL} alt="E-mail" onMouseEnter={handleModalState} />
                     </a>
                     <span></span>
                 </div>
                 
-                {/* {
-                    modal === true && <MailModal Close={handleModal}/>
-                } */}
-            </div>
-            
-
-
-
-            
-            <div className={styles.ContactContainer}>
-                <form action="">
-                    
-                </form>
+                <MailModal
+                    modalState={modalState}
+                    setModalState={setModalState}
+                    handleModalState={handleModalState}
+                />
             </div>
         </div>
     );
