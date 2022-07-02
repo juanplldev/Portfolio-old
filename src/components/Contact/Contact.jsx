@@ -16,8 +16,25 @@ function Contact()
     {
         e.preventDefault();
         setModalState(!modalState);
-        // console.log(modal);
     };
+    
+    window.addEventListener("keyup", key => {
+        if(key.key === "Escape")
+        {
+            if(modalState === true)
+            {
+                setModalState(false);
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    });
     
     return (
         <div className={styles.Container}>
@@ -45,7 +62,6 @@ function Contact()
                 
                 <MailModal
                     modalState={modalState}
-                    setModalState={setModalState}
                     handleModalState={handleModalState}
                 />
             </div>

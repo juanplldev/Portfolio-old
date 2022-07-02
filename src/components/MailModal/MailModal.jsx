@@ -1,18 +1,12 @@
 // Dependencies
 import React from "react";
-import swal from "sweetalert";
+// import swal from "sweetalert";
 // Files
 import CloseButton from "../../img/CloseButtonWhite.png"
 import styles from "./MailModal.module.css";
 
-function MailModal({modalState, setModalState, handleModalState})
+function MailModal({modalState, handleModalState})
 {
-    function handleModalState(e)
-    {
-        e.preventDefault();
-        setModalState(!modalState);
-    };
-    
     if(modalState === true)
     {
         return(

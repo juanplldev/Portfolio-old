@@ -7,6 +7,7 @@ import Landing from "./components/Landing/Landing.jsx";
 import Home from "./components/Home/Home.jsx";
 import "./App.css";
 
+
 function App() {
   return (
     <React.StrictMode>
