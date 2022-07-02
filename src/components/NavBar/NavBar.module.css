@@ -54,7 +54,7 @@
     background: transparent;
     font-size: 22px;
     font-weight: bold;
-    /* color: white; */
+    /* color: #fff; */
     font-family: 'Play', sans-serif;
 }
 
@@ -62,7 +62,6 @@
 {
     background: #212b38b6;
     height: 70px;
-    color: white;
 }
 
 li

@@ -1,26 +1,26 @@
 // Dependencies
 import React from "react";
 // Files
-import JAVASCRIPT from "../../img/Javascript.png";
-import HTML from "../../img/HTML.png";
-import CSS from "../../img/CSS.png";
-import REACT from "../../img/React.png";
-import REDUX from "../../img/Redux.png";
-import NODE from "../../img/Node.png";
-import EXPRESS from "../../img/Express.png";
-import POSTGRESQL from "../../img/PostgreSQL.png";
-import SEQUELIZE from "../../img/Sequelize.png";
-import POSTMAN from "../../img/Postman.png";
-import GIT from "../../img/Git.png";
-import HEROKU from "../../img/Heroku.png";
-import VERCEL from "../../img/Vercel.png";
-import JWT from "../../img/JWT.png";
-import GOOGLE from "../../img/Google.png";
-import VISUAL from "../../img/VisualStudioCode.png";
-import PHOTOSHOP from "../../img/Photoshop.png";
-import GITHUB from "../../img/GitHub.png";
-import SLACK from "../../img/Slack.png";
-import TRELLO from "../../img/Trello.png";
+import JAVASCRIPT from "../../img/JavascriptWhite.png";
+import HTML from "../../img/HTMLWhite.png";
+import CSS from "../../img/CSSWhite.png";
+import REACT from "../../img/ReactWhite.png";
+import REDUX from "../../img/ReduxWhite.png";
+import NODE from "../../img/NodeWhite.png";
+import EXPRESS from "../../img/ExpressWhite.png";
+import POSTGRESQL from "../../img/PostgreSQLWhite.png";
+import SEQUELIZE from "../../img/SequelizeWhite.png";
+import POSTMAN from "../../img/PostmanWhite.png";
+import GIT from "../../img/GitWhite.png";
+import HEROKU from "../../img/HerokuWhite.png";
+import VERCEL from "../../img/VercelWhite.png";
+import JWT from "../../img/JWTWhite.png";
+import GOOGLE from "../../img/GoogleWhite.png";
+import VISUAL from "../../img/VisualStudioCodeWhite.png";
+import PHOTOSHOP from "../../img/PhotoshopWhite.png";
+import GITHUB from "../../img/GitHubWhite.png";
+import SLACK from "../../img/SlackWhite.png";
+import TRELLO from "../../img/TrelloWhite.png";
 import styles from "./Stack.module.css";
 
 

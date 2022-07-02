@@ -2,7 +2,7 @@
 import React from "react";
 import swal from "sweetalert";
 // Files
-import CloseButton from "../../img/CloseButton.png"
+import CloseButton from "../../img/CloseButtonWhite.png"
 import styles from "./MailModal.module.css";
 
 function MailModal({modalState, setModalState, handleModalState})
@@ -24,14 +24,14 @@ function MailModal({modalState, setModalState, handleModalState})
                     </div>
                     
                     <div className={styles.Content}>
-                        <form action="" method="POST" className={styles.MailForm}>
+                        <form action="https://formsubmit.co/juanpablollorentej@gmail.com" method="POST" className={styles.MailForm}>
                             <div className={styles.TopInputs}>
                                 <input name="name" type="text" placeholder="Name" required/>
                                 <input name="email" type="email" placeholder="Email" required/>
                             </div>
                             
-                            <textarea name="message" cols="30" rows="10"  placeholder="Message"></textarea>
-                            <button type="submit">Send</button>
+                            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                            <button type="submit"></button>
                         </form>
                     </div>
                     

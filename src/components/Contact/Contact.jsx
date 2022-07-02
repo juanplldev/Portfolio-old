@@ -2,9 +2,9 @@
 import React, {useState} from "react";
 // Files
 import MailModal from "../MailModal/MailModal.jsx";
-import LINKEDIN from "../../img/LinkedInRound.png";
-import GITHUB from "../../img/GitHub.png";
-import MAIL from "../../img/MailRound.png";
+import LINKEDIN from "../../img/LinkedInRoundWhite.png";
+import GITHUB from "../../img/GitHubWhite.png";
+import MAIL from "../../img/MailRoundWhite.png";
 import styles from "./Contact.module.css";
 
 
