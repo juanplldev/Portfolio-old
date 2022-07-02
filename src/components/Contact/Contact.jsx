@@ -32,17 +32,15 @@ function Contact()
                     </a>
                 </div>
                 
+                <div className={styles.MailIcon}>
+                    <img src={MAIL} alt="E-mail" onMouseEnter={handleModalState} />
+                    <span></span>
+                </div>
+                
                 <div className={styles.Icon}>
                     <a href="https://github.com/JuanPablo-Llorente">
                         <img src={GITHUB} alt="GitHub" />
                     </a>
-                </div>
-                
-                <div className={styles.MailIcon}>
-                    <a href="mailto:juanpablollorentej@gmail.com">
-                        <img src={MAIL} alt="E-mail" onMouseEnter={handleModalState} />
-                    </a>
-                    <span></span>
                 </div>
                 
                 <MailModal

@@ -1,5 +1,6 @@
 // Dependencies
 import React from "react";
+import swal from "sweetalert";
 // Files
 import CloseButton from "../../img/CloseButton.png"
 import styles from "./MailModal.module.css";
@@ -35,7 +36,7 @@ function MailModal({modalState, setModalState, handleModalState})
                     </div>
                     
                     <div className={styles.Footer}>
-                        <h3>juanpablollorentej@gmail.com</h3>
+                        <a href="mailto:juanpablollorentej@gmail.com">juanpablollorentej@gmail.com</a>
                     </div>
                 </div>
             </div>

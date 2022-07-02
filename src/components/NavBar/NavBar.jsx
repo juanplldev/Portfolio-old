@@ -1,6 +1,6 @@
 // Dependencies
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 // Files
 import styles from "./NavBar.module.css";
 import OpenTagIcon from "../../img/OpenTagIcon.png";
@@ -9,6 +9,15 @@ import CloseTagIcon from "../../img/CloseTagIcon.png";
 
 function NavBar()
 {
+    const navigate = useNavigate();
+    
+    function handleAbout(e)
+    {
+        e.preventDefault(e);
+        navigate("/home");
+        window.scrollTo(0, 0);
+    };
+    
     return (
         <div className={styles.Container}>
             <div className={styles.NavBar}>
@@ -19,9 +28,9 @@ function NavBar()
                 </div>
                 
                 <div className={styles.Menu}>
-                    <Link to="/about">
-                        <button className={styles.AboutMe}>About me</button>
-                    </Link>
+                    {/* <Link to="/home"> */}
+                        <button onClick={handleAbout} className={styles.AboutMe}>About me</button>
+                    {/* </Link> */}
                     
                     <Link to="/stack">
                         <button className={styles.MyStack}>My stack</button>

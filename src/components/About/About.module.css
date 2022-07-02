@@ -9,7 +9,7 @@
     align-items: center;
     text-align: center;
     background: gray;
-    background: url("../../img/8.jpg");
+    /* background: url("../../img/14.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@
 
 .Title
 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -35,6 +36,7 @@
     text-align: center;
     font-size: 25px;
     font-family: 'Play', sans-serif;
+    color: rgba(255, 255, 255, 0.867);
     /* background: red; */
 }
 

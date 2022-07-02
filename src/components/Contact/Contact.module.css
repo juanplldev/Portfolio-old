@@ -8,7 +8,7 @@
     align-items: center;
     text-align: center;
     background: gray;
-    /* background: url("../../img/8Rotated.jpg"); */
+    /* background: url("../../img/14Rotated.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,24 +38,24 @@
     /* background: red; */
 }
 
-.Icon img, .MailIcon img
-{
-    width: 90%;
-    margin: 0;
-    border-radius: 50%;
-}
-
-.Icon, .MailIcon img
+.Icon
 {
     transition: all 0.2s;
     border-radius: 50%;
 }
 
-.Icon a, .MailIcon a
+.Icon a
 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+}
+
+.Icon img
+{
+    width: 90%;
+    margin: 0;
     border-radius: 50%;
 }
 
@@ -67,8 +67,16 @@
     border-radius: 50%;
 }
 
-.MailIcon a
+.MailIcon img
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s;
     z-index: 2;
 }
 
