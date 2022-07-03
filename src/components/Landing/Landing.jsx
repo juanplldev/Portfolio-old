@@ -11,8 +11,7 @@ function Landing()
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>Hi! I'm Juan</h1>
-                {/* <h1>Full Stack Web Developer</h1> */}
+                <h1>Hi! I'm Juan.</h1>
                 <h1>Welcome to my portfolio!</h1>
             </div>
             

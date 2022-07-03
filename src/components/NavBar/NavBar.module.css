@@ -58,15 +58,58 @@
     font-family: 'Play', sans-serif;
 }
 
+.SwitcherContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+#Switcher
+{
+    display: none;
+}
+
+.SwitchLabel
+{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: gray;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.SwitchLabel::after
+{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
 .Menu button:hover
 {
     background: #212b38b6;
     height: 70px;
 }
 
-li
+#Switcher:checked ~ .SwitchLabel
 {
-    list-style: none;
+    background: rgba(0, 0, 0, 0.966);
+}
+
+#Switcher:checked ~ .SwitchLabel::after
+{
+    transform: translateX(100%);
 }
 
 @media (max-width: 480px)

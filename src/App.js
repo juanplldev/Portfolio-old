@@ -8,7 +8,8 @@ import Home from "./components/Home/Home.jsx";
 import "./App.css";
 
 
-function App() {
+function App()
+{
   return (
     <React.StrictMode>
       <Routes>
@@ -17,7 +18,7 @@ function App() {
       </Routes>
     </React.StrictMode>
   );
-}
+};
 
 
 export default App;

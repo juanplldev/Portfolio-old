@@ -3,7 +3,7 @@ import React from "react";
 import {Link, useNavigate} from "react-router-dom";
 // Files
 import styles from "./NavBar.module.css";
-import OpenTagIcon from "../../img/OpenTagIcon.png";
+// import OpenTagIcon from "../../img/OpenTagIcon.png";
 import CloseTagIcon from "../../img/CloseTagIcon.png";
 
 
@@ -23,7 +23,7 @@ function NavBar()
             <div className={styles.NavBar}>
                 <div className={styles.Icon}>
                     <Link to="/">
-                        <img src={OpenTagIcon} alt="Landing" />
+                        <img src={CloseTagIcon} alt="Landing" />
                     </Link>
                 </div>
                 
@@ -45,10 +45,9 @@ function NavBar()
                     </Link>
                 </div>
                 
-                <div className={styles.Icon}>
-                    <Link to="/">
-                        <img src={CloseTagIcon} alt="Landing" />
-                    </Link>
+                <div className={styles.SwitcherContainer}>
+                    <input type="checkbox" id={styles.Switcher}/>
+                    <label for={styles.Switcher} className={styles.SwitchLabel}></label>
                 </div>
             </div>
         </div>
