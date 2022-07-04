@@ -65,13 +65,13 @@
     background: linear-gradient(to right, #5affe6b0, #736effa9);
     box-shadow: 1px 1px 30px -6px;
     z-index: 1;
-    transition: all 1.2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .Continue:hover:after
 {
     left: 0;
-    transition: all 1.2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .Continue span

@@ -8,7 +8,7 @@
     align-items: center;
     text-align: center;
     background: gray;
-    background: url("../../img/8Rotated.jpg");
+    background: url("../../img/9Rotated.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
 
 .Title
 {
-    width: 100%;
+    /* width: 100%; */
     /* margin-top: 100px; */
     padding: 10px;
     font-family: 'Play', sans-serif;
@@ -61,8 +61,9 @@
 
 .Icon p
 {
-    color: white;
+    color: #fff;
     font-weight: 500;
+    font-size: 18px;
 }
 
 .Icon a
@@ -73,6 +74,7 @@
 .Icon:hover
 {
     transform: scale(1.2);
+    opacity: 1;
 }
 
 @media (max-width: 1450px)
@@ -103,8 +105,8 @@
     }
     .Container
     {
-        height: 200%;
-        justify-content: flex-start;
+        height: 200vh;
+        /* justify-content: flex-start; */
     }
     .StackContainer
     {

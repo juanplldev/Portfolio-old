@@ -48,6 +48,7 @@
 {
     width: fit-content;
     height: fit-content;
+    padding: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -56,6 +57,7 @@
     font-weight: bold;
     /* color: #fff; */
     font-family: 'Play', sans-serif;
+    transition: 0.2s;
 }
 
 .SwitcherContainer
@@ -75,8 +77,8 @@
 {
     position: relative;
     display: inline-block;
-    width: 55px;
-    height: 30px;
+    width: 70px;
+    height: 40px;
     background: gray;
     border-radius: 100px;
     cursor: pointer;
@@ -87,10 +89,10 @@
 {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 5px;
-    width: 22px;
-    height: 22px;
+    top: 7.5px;
+    left: 10%;
+    width: 25px;
+    height: 25px;
     background: #fff;
     border-radius: 100%;
     transition: 0.3s;
@@ -98,8 +100,9 @@
 
 .Menu button:hover
 {
-    background: #212b38b6;
-    height: 70px;
+    /* height: 70px; */
+    /* background: #212b38b6; */
+    transform: translateY(-5px);
 }
 
 #Switcher:checked ~ .SwitchLabel
@@ -109,7 +112,7 @@
 
 #Switcher:checked ~ .SwitchLabel::after
 {
-    transform: translateX(100%);
+    transform: translateX(120%);
 }
 
 @media (max-width: 480px)

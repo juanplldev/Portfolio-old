@@ -3,13 +3,12 @@
     display: flex;
     width: 100%;
     height: 100vh;
-    /* height: 100%; */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     background: gray;
-    background: url("../../img/8.jpg");
+    background: url("../../img/9.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,16 +16,24 @@
 
 .Title
 {
-    width: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
     padding: 10px;
-    font-family: 'Play', sans-serif;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.867);
+    font-size: 25px;
+    letter-spacing: 2px;
     border-radius: 5px;
     background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
+}
+
+.Title h1
+{
+    background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 60s linear infinite;
 }
 
 .About
@@ -34,28 +41,146 @@
     width: 80%;
     height: auto;
     text-align: center;
-    font-size: 25px;
-    font-family: 'Play', sans-serif;
+    font-size: 30px;
     color: rgba(255, 255, 255, 0.867);
-    /* background: red; */
 }
 
-.P::first-letter
+@keyframes slideGradient
 {
-    font-weight: bold;
-    /* color: black; */
+    0%
+    {
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
+    }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 1440px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1366px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 21px;
+    }
+    .About
+    {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 23px;
+        margin-top: 50px;
+    }
+    .About
+    {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+        background: url("../../img/8Vertical.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Title
+    {
+        font-size: 23px;
+        margin-top: 0px;
+    }
+    .About
+    {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 550px)
 {
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 23px;
+    }
+    .About
+    {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 20px;
+    }
     .About
     {
         font-size: 20px;
     }
 }
 
-@media (max-width: 420px)
+@media (max-width: 375px)
 {
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .About
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 18px;
+        margin-top: 50px;
+    }
     .About
     {
         font-size: 18px;

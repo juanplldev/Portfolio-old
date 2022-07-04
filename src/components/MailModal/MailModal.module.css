@@ -133,6 +133,7 @@
     background: none;
     border-radius: 5px;
     background-image: linear-gradient(90deg, #37465b, #5affe7, #08c6ab, #726eff);
+    transition: all 0.3s ease-in-out;
     animation: slideBackground 50s linear infinite;
 }
 
@@ -163,7 +164,7 @@
 
 .Header button:hover
 {
-    background: rgba(165, 165, 165, 0.76);
+    transform: scale(1.1);
 }
 
 .Header button .Container
@@ -184,6 +185,7 @@
 .MailForm button:hover
 {
     animation: slideBackground 10s linear infinite;
+    transform: scale(1.1);
 }
 
 @keyframes openModal

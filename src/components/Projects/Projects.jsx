@@ -13,7 +13,7 @@ function Projects()
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>My projects</h1>
+                <h1>Projects</h1>
             </div>
             
             <div className={styles.ProjectsContainer}>

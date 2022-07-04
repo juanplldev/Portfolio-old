@@ -2,20 +2,41 @@
 import React from "react";
 import {Link, useNavigate} from "react-router-dom";
 // Files
-import styles from "./NavBar.module.css";
-// import OpenTagIcon from "../../img/OpenTagIcon.png";
+import {scrollToAbout, scrollToStack, scrollToProjects, scrollToContact} from "../../handlers/handlers";
 import CloseTagIcon from "../../img/CloseTagIcon.png";
+// import About from "../../img/About.png";
+// import Stack from "../../img/Stack.png";
+// import Projects from "../../img/Projects.png";
+// import Contact from "../../img/Contact.png";
+import styles from "./NavBar.module.css";
 
 
 function NavBar()
 {
     const navigate = useNavigate();
     
-    function handleAbout(e)
+    async function handleScrollAbout()
     {
-        e.preventDefault(e);
         navigate("/home");
-        window.scrollTo(0, 0);
+        scrollToAbout();
+    };
+    
+    async function handleScrollStack()
+    {
+        await navigate("/home");
+        scrollToStack();
+    };
+    
+    async function handleScrollProjects()
+    {
+        await navigate("/home");
+        scrollToProjects();
+    };
+    
+    async function handleScrollContact()
+    {
+        await navigate("/home");
+        scrollToContact();
     };
     
     return (
@@ -28,26 +49,20 @@ function NavBar()
                 </div>
                 
                 <div className={styles.Menu}>
-                    {/* <Link to="/home"> */}
-                        <button onClick={handleAbout} className={styles.AboutMe}>About me</button>
-                    {/* </Link> */}
+                    <button onClick={handleScrollAbout} className={styles.AboutMe}>About</button>
                     
-                    <Link to="/stack">
-                        <button className={styles.MyStack}>My stack</button>
-                    </Link>
+                    <button onClick={handleScrollStack} className={styles.MyStack}>Stack</button>
                     
-                    <Link to="projects">
-                        <button className={styles.Projects}>Projects</button>
-                    </Link>
+                    <button onClick={handleScrollProjects} className={styles.Projects}>Projects</button>
                     
-                    <Link to="contact">
-                        <button className={styles.Contact}>Contact</button>
-                    </Link>
+                    <button onClick={handleScrollContact} className={styles.Contact}>Contact</button>
                 </div>
                 
                 <div className={styles.SwitcherContainer}>
                     <input type="checkbox" id={styles.Switcher}/>
-                    <label for={styles.Switcher} className={styles.SwitchLabel}></label>
+                    <label for={styles.Switcher} className={styles.SwitchLabel}>
+                        <label htmlFor={styles.SwitchLabel} className={styles.SwitchLabelIcon}></label>
+                    </label>
                 </div>
             </div>
         </div>
