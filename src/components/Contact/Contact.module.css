@@ -17,14 +17,25 @@
 
 .Title
 {
-    /* width: 100%; */
     margin-top: 70px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    font-family: 'Play', sans-serif;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.867);
-    background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
+    font-size: 25px;
+    letter-spacing: 2px;
     border-radius: 5px;
+    /* background: linear-gradient(to right bottom, #736effb6, #5affe6a4); */
+}
+
+.Title h1
+{
+    background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 60s linear infinite;
 }
 
 .IconsContainer
@@ -33,7 +44,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 30%;
+    width: 300px;
     margin-bottom: 30px;
     /* background: red; */
 }
@@ -111,5 +122,139 @@
         width: 100px;
         height: 100px;
         opacity: 0;
+    }
+}
+
+@keyframes animateScaled
+{
+    0%
+    {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+
+
+@keyframes slideGradient
+{
+    0%
+    {
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
+    }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 1366px)
+{
+    .Title
+    {
+        font-size: 24px;
+    }
+    .IconsContainer
+    {
+        margin-bottom: 15px;
+    }
+    .Icon img
+    {
+        width: 50px;
+    }
+    .MailIcon img
+    {
+        width: 50px;
+    }
+    .MailIcon span
+    {
+        animation: animateScaled 1.5s linear infinite;
+    }
+}
+
+@media (max-width: 1150px)
+{
+    .Title
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .Container
+    {
+        background: url("../../img/8Vertical.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Title
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .Title
+    {
+        font-size: 20px;
+    }
+    .IconsContainer
+    {
+        width: 250px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .Title
+    {
+        font-size: 18px;
+    }
+    .IconsContainer
+    {
+        width: 230px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .Title
+    {
+        font-size: 18px;
+    }
+    .IconsContainer
+    {
+        width: 200px;
     }
 }
