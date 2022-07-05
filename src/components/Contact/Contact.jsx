@@ -50,7 +50,7 @@ function Contact()
                 </div>
                 
                 <div className={styles.MailIcon}>
-                    <img src={MAIL} alt="E-mail" onMouseEnter={handleModalState} />
+                    <img src={MAIL} alt="E-mail" onMouseEnter={handleModalState} onTouchStart={handleModalState}/>
                     <span></span>
                 </div>
                 
