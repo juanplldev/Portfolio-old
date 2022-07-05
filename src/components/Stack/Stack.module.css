@@ -7,24 +7,33 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background: gray;
-    background: url("../../img/9Rotated.jpg");
+    background: #060a0f;
+    background: url("../../img/6Rotated.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* z-index: 1 ; */
 }
 
 .Title
 {
-    /* width: 100%; */
-    /* margin-top: 100px; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    font-family: 'Play', sans-serif;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.867);
-    background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
+    font-size: 25px;
+    letter-spacing: 2px;
     border-radius: 5px;
+    background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
+}
+
+.Title h1
+{
+    background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 60s linear infinite;
 }
 
 .StackContainer
@@ -64,6 +73,11 @@
     color: #fff;
     font-weight: 500;
     font-size: 18px;
+    background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 80s linear infinite;
 }
 
 .Icon a
@@ -77,7 +91,26 @@
     opacity: 1;
 }
 
-@media (max-width: 1450px)
+.Icon:hover p
+{
+    animation: slideGradient 40s linear infinite;
+}
+
+@keyframes slideGradient
+{
+    0%
+    {
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
+    }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 1440px)
 {
     .Icon
     {
@@ -87,26 +120,41 @@
     }
 }
 
-@media (max-width: 1300px)
+@media (max-width: 1366px)
 {
+    .Title
+    {
+        font-size: 24px;
+    }
     .Icon
     {
-        width: auto;
-        height: auto;
+        transform: scale(0.9);
+        margin: 16px;
+    }
+}
+
+@media (max-width: 1150px)
+{
+    .Title
+    {
+        font-size: 20px;
+    }
+    .Icon
+    {
+        transform: scale(0.8);
         margin: 10px;
     }
 }
 
-@media (max-width: 1000px)
+@media (max-width: 1024px)
 {
     .Title
     {
-        margin-bottom: 30px;
+        font-size: 23px;
     }
     .Container
     {
         height: 200vh;
-        /* justify-content: flex-start; */
     }
     .StackContainer
     {
@@ -118,12 +166,62 @@
     {
         flex-direction: column;
     }
+    .Icon
+    {
+        transform: scale(0.9);
+        margin: 15px;
+    }
 }
 
-@media (max-width: 500px)
+@media (max-width: 768px)
 {
-    .Stack
+    .Container
+    {
+        justify-content: space-evenly;
+        background: url("../../img/8Vertical.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Title
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .Title
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .Title
+    {
+        font-size: 18px;
+    }
+    .Icon
     {
         transform: scale(0.8);
+        margin: 10px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .Title
+    {
+        font-size: 18px;
     }
 }

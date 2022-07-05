@@ -7,8 +7,8 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background: gray;
-    background: url("../../img/9.jpg");
+    background: #060a0f;
+    background: url("../../img/6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@
     }
     .Title
     {
-        font-size: 21px;
+        font-size: 24px;
     }
     .About
     {

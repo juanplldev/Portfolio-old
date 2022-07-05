@@ -7,24 +7,33 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background: gray;
-    background: url("../../img/9.jpg");
+    background: #060a0f;
+    background: url("../../img/6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* z-index: 1 ; */
 }
 
 .Title
 {
-    /* width: 100%; */
-    /* margin-top: 100px; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    font-family: 'Play', sans-serif;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.867);
-    background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
+    font-size: 25px;
+    letter-spacing: 2px;
     border-radius: 5px;
+    background: linear-gradient(to right bottom, #736effb6, #5affe6a4);
+}
+
+.Title h1
+{
+    background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 60s linear infinite;
 }
 
 .ProjectsContainer
@@ -35,6 +44,7 @@
     align-items: center;
     width: 90%;
     height: 50%;
+    /* background: green; */
 }
 
 .Card
@@ -46,6 +56,17 @@
     border-radius: 6px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     cursor: context-menu;
+}
+
+.Card video
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-out;
 }
 
 .Background
@@ -78,6 +99,11 @@
     margin-bottom: 20%;
     transition: all 0.5s ease-out;
     font-weight: bold;
+}
+
+.ComingSoonTitle
+{
+    cursor: pointer;
 }
 
 .Layer h2 a
@@ -115,6 +141,7 @@
 {
     margin: 0 10px 0 10px;
     transition: all 0.2s;
+    border-radius: 100%;
 }
 
 .Links img
@@ -122,6 +149,11 @@
     width: 40px;
     cursor: pointer;
     transition: all 0.5s ease-out;
+}
+
+.ComingSoonIcons
+{
+    margin: 0 10px 0 10px;
 }
 
 .Card:hover .Layer
@@ -151,38 +183,162 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 1150px)
+@keyframes slideGradient
 {
-    .ProjectsContainer
+    0%
     {
-        width: 80%;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: space-around;
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
     }
 }
 
-@media (max-width: 650px)
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 1366px)
 {
-    .ProjectsContainer
+    .Title
     {
-        width: 80%;
-        height: 500px;
-        flex-direction: column;
-        justify-content: space-between;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1150px)
+{
+    .Title
+    {
+        font-size: 20px;
     }
     .Card
     {
-        width: 400px;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+    .Container
+    {
+        height: 200vh;
+        justify-content: space-evenly;
+    }
+    .ProjectsContainer
+    {
+        width: 100%;
+        /* height: 100vh; */
+        flex-direction: column;
+    }
+    .Card
+    {
+        height: 330px;
+        width: 560px;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+        background: url("../../img/8Vertical.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Title
+    {
+        font-size: 23px;
+    }
+    .Card
+    {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 550px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+    .ProjectsContainer
+    {
+        height: 700px;
+    }
+    .Card
+    {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 500px)
+{
+    .Title
+    {
+        font-size: 22px;
+    }
+    .ProjectsContainer
+    {
+        height: 600px;
+    }
+    .Card
+    {
+        width: 500px;
         height: 300px;
-        margin-bottom: 15px;
     }
-    .Layer, .Layer p
+}
+
+@media (max-width: 435px)
+{
+    .Title
     {
-        font-size: 15px;
+        font-size: 20px;
     }
-    .Links img
+    .Card
     {
-        width: 30px;
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 400px)
+{
+    .Card
+    {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 375px)
+{
+    .Title
+    {
+        font-size: 18px;
+    }
+    .Card
+    {
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 345px)
+{
+    .Card
+    {
+        transform: scale(0.60);
+    }
+}
+
+@media (max-width: 325px)
+{
+    .Card
+    {
+        transform: scale(0.55);
     }
 }

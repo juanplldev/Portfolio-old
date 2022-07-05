@@ -82,7 +82,7 @@
     z-index: 2;
 }
 
-video
+.Background video
 {
     position: fixed;
     min-width: 100%;
