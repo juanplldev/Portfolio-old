@@ -7,12 +7,11 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background: #060a0f;
-    background: url("../../img/6Rotated.jpg");
+    /* background: #060a0f; */
+    /* background: url("../../img/6Rotated.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* z-index: 1; */
 }
 
 .Title
@@ -202,13 +201,6 @@
 
 @media (max-width: 768px)
 {
-    .Container
-    {
-        background: url("../../img/8Vertical.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .Title
     {
         font-size: 23px;

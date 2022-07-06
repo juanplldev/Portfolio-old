@@ -7,8 +7,8 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background: #060a0f;
-    background: url("../../img/6.jpg");
+    /* background: #060a0f; */
+    /* background: url("../../img/6.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,10 +251,6 @@
     .Container
     {
         justify-content: space-evenly;
-        background: url("../../img/8Vertical.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .Title
     {
