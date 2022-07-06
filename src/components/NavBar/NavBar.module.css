@@ -42,15 +42,16 @@
     align-items: center;
     /* background: red; */
     width: 40%;
+    margin-top: 10px;
 }
 
-.Menu button
+.Button
 {
     width: fit-content;
     height: fit-content;
-    padding: 10px;
+    padding: 5px;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
     background: transparent;
     font-size: 22px;
@@ -58,6 +59,24 @@
     /* color: #fff; */
     font-family: 'Play', sans-serif;
     transition: 0.2s;
+}
+
+.ActiveButton
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: none;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    background: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    /* color: #fff; */
+    font-family: 'Play', sans-serif;
+    transition: 0.2s;
+    border-bottom: 2px solid #fff;
+    transform: translateY(-7px);
 }
 
 .SwitcherContainer
@@ -98,11 +117,12 @@
     transition: 0.3s;
 }
 
-.Menu button:hover
+.Button:hover
 {
     /* height: 70px; */
     /* background: #212b38b6; */
-    transform: translateY(-5px);
+    border-bottom: 2px solid #fff;
+    transform: translateY(-7px);
 }
 
 #Switcher:checked ~ .SwitchLabel
