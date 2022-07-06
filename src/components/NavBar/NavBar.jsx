@@ -14,6 +14,7 @@ import styles from "./NavBar.module.css";
 function NavBar()
 {
     const navigate = useNavigate();
+    
     const [height, setHeight] = useState(window.innerHeight);
     const [width, setWidth] = useState(window.innerWidth);
     const [actualHeight, setActualHeight] = useState(window.visualViewport.pageTop);
@@ -26,7 +27,7 @@ function NavBar()
     
     window.addEventListener("scroll", () => {
         setActualHeight(window.visualViewport.pageTop);
-        setHeight(window.innerWidth);
+        setHeight(window.innerHeight);
         setWidth(window.innerWidth);
     });
     

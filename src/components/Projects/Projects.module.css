@@ -268,10 +268,6 @@
     {
         font-size: 23px;
     }
-    .ProjectsContainer
-    {
-        height: 700px;
-    }
     .Card
     {
         transform: scale(0.8);
@@ -283,10 +279,6 @@
     .Title
     {
         font-size: 22px;
-    }
-    .ProjectsContainer
-    {
-        height: 600px;
     }
     .Card
     {
