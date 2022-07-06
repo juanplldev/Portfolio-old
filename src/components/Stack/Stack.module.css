@@ -7,8 +7,6 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    /* background: #060a0f; */
-    /* background: url("../../img/6Double.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +22,6 @@
     font-size: 25px;
     letter-spacing: 2px;
     border-radius: 5px;
-    /* background: linear-gradient(to right bottom, #736effb6, #5affe6a4); */
 }
 
 .Title h1
@@ -42,7 +39,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10%;
-    /* background: green; */
     width: auto;
     height: auto;
 }
@@ -55,7 +51,6 @@
     align-items: center;
     width: auto;
     height: auto;
-    /* background: red; */
 }
 
 .Icon
@@ -64,7 +59,6 @@
     max-width: fit-content;
     height: auto;
     margin: 30px;
-    /* background: green; */
     transition: all 0.2s;
     opacity: 0.8;
 }

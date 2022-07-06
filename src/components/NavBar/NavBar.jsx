@@ -100,7 +100,7 @@ function NavBar()
                 
                 <div className={styles.SwitcherContainer}>
                     <input type="checkbox" id={styles.Switcher}/>
-                    <label for={styles.Switcher} className={styles.SwitchLabel}>
+                    <label htmlFor={styles.Switcher} className={styles.SwitchLabel}>
                         <label htmlFor={styles.SwitchLabel} className={styles.SwitchLabelIcon}></label>
                     </label>
                 </div>

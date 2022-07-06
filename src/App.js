@@ -11,12 +11,12 @@ import "./App.css";
 function App()
 {
   return (
-    <React.StrictMode>
+    <React.Fragment>
       <Routes>
         <Route exact path="/" element={[<NavBar/>, <Landing/>]} />
         <Route exact path="/home" element={[<NavBar/>, <Home/>]} />
       </Routes>
-    </React.StrictMode>
+    </React.Fragment>
   );
 };
 
