@@ -11,10 +11,10 @@ import styles from "./Contact.module.css";
 function Contact()
 {
     const [modalState, setModalState] = useState(false);
+    const width = window.innerWidth;
     
-    function handleModalState(e)
+    function handleModalState()
     {
-        e.preventDefault();
         setModalState(!modalState);
     };
     
@@ -50,7 +50,7 @@ function Contact()
                 </div>
                 
                 <div className={styles.MailIcon}>
-                    <img src={MAIL} alt="E-mail" onMouseEnter={handleModalState} onTouchStart={handleModalState}/>
+                    <img src={MAIL} alt="E-mail" onMouseEnter={width > 768 ? handleModalState : null} onClick={width <= 768 ? handleModalState : null}/>
                     <span></span>
                 </div>
                 
