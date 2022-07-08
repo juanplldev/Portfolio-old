@@ -1,0 +1,346 @@
+.Background
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Container
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 1300px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(102, 97, 97, 0.2) 0px 7px 29px 0px;
+    animation: openModal 0.5s;
+    /* background: linear-gradient(to right bottom, #736eff6b, #5affe65d); */
+    background: rgb(158, 155, 155);
+    border: 1px solid rgba(0, 0, 0, 0.527);
+}
+
+.Header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    color: #000;
+}
+
+.Header h1
+{
+    /* background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff); */
+    background: linear-gradient(to right, #000, #3a3939d7, #3a3939d7, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 30s linear infinite;
+}
+
+.Header button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Header img
+{
+    width: 40px;
+}
+
+.Content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+}
+
+.MailForm
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.TopInputs
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.TopInputs input
+{
+    width: 49%;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #000;
+    font-size: 18px;
+    color: #000;
+}
+
+.MailForm textarea
+{
+    min-width: 100%;
+    min-height: 100px;
+    max-width: 100%;
+    max-height: 200px;
+    height: 150px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #000;
+    font-size: 18px;
+    color: #000;
+}
+
+.MailForm button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 35px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #37465b, #5affe7, #08c6ab, #726eff);
+    transition: all 0.3s ease-in-out;
+    animation: slideBackground 50s linear infinite;
+}
+
+.MailForm button:after
+{
+    content: "Send";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 5px;
+    /* background-color: gray; */
+    background-color: rgb(107, 106, 106);
+}
+
+.Footer
+{
+    display: block;
+}
+
+.Footer a
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Header button:hover
+{
+    transform: scale(1.1);
+}
+
+.TopInputs input::placeholder
+{
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.MailForm textarea::placeholder
+{
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.MailForm button:hover
+{
+    animation: slideBackground 10s linear infinite;
+    transform: scale(1.1);
+}
+
+@keyframes openModal
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideBackground
+{
+    0%
+    {
+        background-position: -500px;
+    }
+    100%
+    {
+        background-position: 1000px;
+    }
+}
+
+
+@keyframes slideGradient
+{
+    0%
+    {
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
+    }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 1440px)
+{
+    .Container
+    {
+        width: 1000px;
+        height: 500px;
+    }
+    .MailForm button
+    {
+        width: 230px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 1366px)
+{
+    .Container
+    {
+        width: 900px;
+        height: 450px;
+    }
+    .MailForm button
+    {
+        width: 230px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .Container
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .Header h1
+    {
+        font-size: 27px;
+    }
+    .TopInputs input
+    {
+        font-size: 18px;
+    }
+    .MailForm button
+    {
+        width: 150px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .MailForm textarea
+    {
+        font-size: 18px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .Header h1
+    {
+        font-size: 27px;
+    }
+    .Header img
+    {
+        width: 35px;
+    }
+    .TopInputs input
+    {
+        font-size: 16px;
+    }
+    .MailForm button
+    {
+        width: 130px;
+        height: 27px;
+        font-size: 16px;
+    }
+    .MailForm textarea
+    {
+        font-size: 16px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .Header h1
+    {
+        font-size: 22px;
+    }
+    .Header img
+    {
+        width: 30px;
+    }
+    .TopInputs input
+    {
+        font-size: 15px;
+    }
+    .MailForm button
+    {
+        width: 100px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .MailForm textarea
+    {
+        font-size: 15px;
+        height: 100px;
+    }
+}

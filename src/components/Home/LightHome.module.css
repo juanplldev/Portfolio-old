@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+
+.Container
+{
+    display: flex;
+    flex-direction: column;
+    background: rgb(206, 206, 206);
+    /* background: url("../../img/Background1.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: 0.3s;
+}

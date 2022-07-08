@@ -1,11 +1,26 @@
 // Dependencies
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
 // Files
-import styles from "./About.module.css";
-
+import ThemeContext from "../../contexts/ThemeContext";
+import darkStyles from "./DarkAbout.module.css";
+import lightStyles from "./LightAbout.module.css";
 
 function About()
 {
+    const {theme} = useContext(ThemeContext);
+    const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
+    
+    useEffect(() => {
+        if(theme === "Dark")
+        {
+            setStyles(darkStyles);
+        }
+        else if(theme === "Light")
+        {
+            setStyles(lightStyles);
+        };
+    }, [theme]);
+    
     return(
         <div className={styles.Container}>
             <div className={styles.Title}>

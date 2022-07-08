@@ -1,22 +1,25 @@
 // Dependencies
-import React, {useState} from "react";
+import React, {useState, useEffect, useContext} from "react";
 // Files
+import ThemeContext from "../../contexts/ThemeContext";
 import MailModal from "../MailModal/MailModal.jsx";
-import LINKEDIN from "../../img/LinkedInRoundWhite.png";
-import GITHUB from "../../img/GitHubWhite.png";
-import MAIL from "../../img/MailRoundWhite.png";
-import styles from "./Contact.module.css";
+import LinkedInRoundWhite from "../../img/LinkedInRoundWhite.png";
+import GitHubWhite from "../../img/GitHubWhite.png";
+import MailRoundWhite from "../../img/MailRoundWhite.png";
+import LinkedInRoundBlack from "../../img/LinkedInRound.png";
+import GitHubBlack from "../../img/GitHub.png";
+import MailRoundBlack from "../../img/MailRound.png";
+import darkStyles from "./DarkContact.module.css";
+import lightStyles from "./LightContact.module.css";
 
 
 function Contact()
 {
+    const {theme} = useContext(ThemeContext);
+    const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
+    
     const [modalState, setModalState] = useState(false);
     const width = window.innerWidth;
-    
-    function handleModalState()
-    {
-        setModalState(!modalState);
-    };
     
     window.addEventListener("keyup", key => {
         if(key.key === "Escape")
@@ -36,6 +39,22 @@ function Contact()
         }
     });
     
+    useEffect(() => {
+        if(theme === "Dark")
+        {
+            setStyles(darkStyles);
+        }
+        else if(theme === "Light")
+        {
+            setStyles(lightStyles);
+        };
+    }, [theme]);
+    
+    function handleModalState()
+    {
+        setModalState(!modalState);
+    };
+    
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
@@ -45,18 +64,18 @@ function Contact()
             <div className={styles.IconsContainer}>
                 <div className={styles.Icon}>
                     <a href="https://www.linkedin.com/in/juan-pablo-llorente/">
-                        <img src={LINKEDIN} alt="LinkedIn" />
+                        <img src={theme === "Dark" ? LinkedInRoundWhite : LinkedInRoundBlack} alt="LinkedIn" />
                     </a>
                 </div>
                 
                 <div className={styles.MailIcon}>
-                    <img src={MAIL} alt="E-mail" onMouseEnter={width > 768 ? handleModalState : null} onClick={width <= 768 ? handleModalState : null}/>
+                    <img src={theme === "Dark" ? MailRoundWhite : MailRoundBlack} alt="E-mail" onMouseEnter={width > 768 ? handleModalState : null} onClick={width <= 768 ? handleModalState : null}/>
                     <span></span>
                 </div>
                 
                 <div className={styles.Icon}>
                     <a href="https://github.com/JuanPablo-Llorente">
-                        <img src={GITHUB} alt="GitHub" />
+                        <img src={theme === "Dark" ? GitHubWhite : GitHubBlack} alt="GitHub" />
                     </a>
                 </div>
                 

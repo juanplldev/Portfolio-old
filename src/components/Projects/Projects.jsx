@@ -1,17 +1,33 @@
 // Dependencies
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
 // Files
+import ThemeContext from "../../contexts/ThemeContext";
 import VideogamesImg from "../../img/Videogames.png";
 import DigitalizArteImg from "../../img/DigitalizArte.png";
 import PortfolioImg from "../../img/Portfolio.png";
 import ComingSoonVideo from "../../img/ComingSoon.mp4";
 import GitHubWhite from "../../img/GitHubWhite.png";
 import Website from "../../img/Website.png";
-import styles from "./Projects.module.css";
+import darkStyles from "./DarkProjects.module.css";
+import lightStyles from "./LightProjects.module.css";
 
 
 function Projects()
 {
+    const {theme} = useContext(ThemeContext);
+    const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
+    
+    useEffect(() => {
+        if(theme === "Dark")
+        {
+            setStyles(darkStyles);
+        }
+        else if(theme === "Light")
+        {
+            setStyles(lightStyles);
+        };
+    }, [theme]);
+    
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>

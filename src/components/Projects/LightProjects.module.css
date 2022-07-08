@@ -1,0 +1,334 @@
+.Container
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Title
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.Title h1
+{
+    /* background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff); */
+    background: linear-gradient(to right, #000, #3a3939d7, #3a3939d7, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideGradient 60s linear infinite;
+}
+
+.ProjectsContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+}
+
+.Card
+{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: context-menu;
+}
+
+.Card video
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-out;
+}
+
+.Background
+{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-out;
+}
+
+.Layer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+.Layer h2
+{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    transition: all 0.5s ease-out;
+    font-weight: bold;
+}
+
+.ComingSoonTitle
+{
+    cursor: not-allowed;
+}
+
+.Layer h2 a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.Layer p
+{
+    margin: auto;
+    width: 100%;
+    max-width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.Layer p a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Links
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+
+.Links a
+{
+    margin: 0 10px 0 10px;
+    transition: all 0.2s;
+    border-radius: 100%;
+}
+
+.Links img
+{
+    width: 40px;
+    /* cursor: pointer; */
+    transition: all 0.5s ease-out;
+}
+
+.ComingSoonIcons
+{
+    margin: 0 10px 0 10px;
+    cursor: not-allowed;
+}
+
+.Card:hover .Layer
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Card:hover .Layer h2
+{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.Card:hover .Links
+{
+    margin-bottom: 5%;
+}
+
+.Card:hover .Background
+{
+    transform: scale(1.3);
+}
+
+.Links a:hover
+{
+    transform: scale(1.2);
+}
+
+@keyframes slideGradient
+{
+    0%
+    {
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
+    }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 1366px)
+{
+    .Container
+    {
+        height: 100vh;
+    }
+    .Title
+    {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .Card
+    {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 1150px)
+{
+    .Title
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+    .Container
+    {
+        height: 200vh;
+        justify-content: space-evenly;
+    }
+    .ProjectsContainer
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .Card
+    {
+        height: 330px;
+        width: 560px;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .Container
+    {
+        justify-content: space-evenly;
+    }
+    .Title
+    {
+        font-size: 23px;
+    }
+    .Card
+    {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 550px)
+{
+    .Title
+    {
+        font-size: 23px;
+    }
+    .Card
+    {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 500px)
+{
+    .Title
+    {
+        font-size: 22px;
+    }
+    .Card
+    {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 435px)
+{
+    .Title
+    {
+        font-size: 20px;
+    }
+    .Card
+    {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 400px)
+{
+    .Card
+    {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 375px)
+{
+    .Title
+    {
+        font-size: 18px;
+    }
+    .Card
+    {
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 345px)
+{
+    .Card
+    {
+        transform: scale(0.60);
+    }
+}
+
+@media (max-width: 325px)
+{
+    .Card
+    {
+        transform: scale(0.55);
+    }
+}

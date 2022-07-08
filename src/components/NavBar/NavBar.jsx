@@ -1,19 +1,23 @@
 // Dependencies
-import React, {useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 // Files
+import ThemeContext from "../../contexts/ThemeContext";
 import {scrollToAbout, scrollToStack, scrollToProjects, scrollToContact} from "../../handlers/handlers";
 import CloseTagIcon from "../../img/CloseTagIcon.png";
 import About from "../../img/About.png";
 import Stack from "../../img/Stack.png";
 import Projects from "../../img/Projects.png";
 import Contact from "../../img/Contact.png";
-import styles from "./NavBar.module.css";
-
+import darkStyles from "./DarkNavBar.module.css";
+import lightStyles from "./LightNavBar.module.css";
 
 function NavBar()
 {
     const navigate = useNavigate();
+    
+    const {theme, setTheme} = useContext(ThemeContext);
+    const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
     
     const [height, setHeight] = useState(window.innerHeight);
     const [width, setWidth] = useState(window.innerWidth);
@@ -30,6 +34,31 @@ function NavBar()
         setHeight(window.innerHeight);
         setWidth(window.innerWidth);
     });
+    
+    useEffect(() => {
+        if(theme === "Dark")
+        {
+            setStyles(darkStyles);
+        }
+        else if(theme === "Light")
+        {
+            setStyles(lightStyles);
+        };
+    }, [theme]);
+    
+    function handleChangeTheme()
+    {
+        if(theme === "Dark")
+        {
+            setTheme("Light");
+            window.localStorage.setItem("Theme", "Light");
+        }
+        else if(theme === "Light")
+        {
+            setTheme("Dark");
+            window.localStorage.setItem("Theme", "Dark");
+        };
+    };
     
     async function handleScrollAbout()
     {
@@ -99,8 +128,13 @@ function NavBar()
                 </div>
                 
                 <div className={styles.SwitcherContainer}>
-                    <input type="checkbox" id={styles.Switcher}/>
-                    <label htmlFor={styles.Switcher} className={styles.SwitchLabel}>
+                    {
+                        styles.LightProperty ?
+                        <input checked type="checkbox" id={styles.Switcher}/>
+                        :
+                        <input type="checkbox" id={styles.Switcher}/>
+                    }
+                    <label onClick={handleChangeTheme} htmlFor={styles.Switcher} className={styles.SwitchLabel}>
                         <label htmlFor={styles.SwitchLabel} className={styles.SwitchLabelIcon}></label>
                     </label>
                 </div>

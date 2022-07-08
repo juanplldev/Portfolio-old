@@ -1,21 +1,28 @@
+.LightProperty
+{
+    display: none;
+}
+
 .Container
 {
     display: block;
     position: fixed;
     width: 100%;
     height: 70px;
-    background: linear-gradient(to right bottom, #37465be5, #736effd0);
+    /* background: linear-gradient(to right bottom, #37465be5, #736effd0); */
     z-index: 2;
 }
 
 .NavBar
 {
     display: flex;
+    background: rgba(131, 129, 129, 0.75);
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
     padding: 0 5px;
+    transition: 0.3s;
 }
 
 .Icon
@@ -66,7 +73,7 @@
     font-size: 22px;
     font-weight: bold;
     transition: 0.2s;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
     transform: translateY(-7px);
 }
 
@@ -89,7 +96,7 @@
     display: inline-block;
     width: 70px;
     height: 40px;
-    background: gray;
+    background: rgba(0, 0, 0, 0.966);
     border-radius: 100px;
     cursor: pointer;
     transition: 0.3s;
@@ -110,18 +117,19 @@
 
 .Button:hover
 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgb(15, 15, 15);
     transform: translateY(-7px);
 }
 
 #Switcher:checked ~ .SwitchLabel
 {
-    background: rgba(0, 0, 0, 0.966);
+    background: #fff;
 }
 
 #Switcher:checked ~ .SwitchLabel::after
 {
     transform: translateX(120%);
+    background: #000;
 }
 
 /* MEDIA QUERIES BREAKPOINTS */

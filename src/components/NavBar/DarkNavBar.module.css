@@ -1,0 +1,285 @@
+.DarkProperty
+{
+    display: none;
+}
+
+.Container
+{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right bottom, #37465be5, #736effd0);
+    z-index: 2;
+}
+
+.NavBar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    transition: 0.3s;
+}
+
+.Icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 10px 0 10px;
+}
+
+.Icon img
+{
+    width: 100px;
+}
+
+.Menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.Button
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.ActiveButton
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.2s;
+    border-bottom: 2px solid #fff;
+    transform: translateY(-7px);
+}
+
+.SwitcherContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+#Switcher
+{
+    display: none;
+}
+
+.SwitchLabel
+{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.966);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.SwitchLabel::after
+{
+    content: "";
+    position: absolute;
+    top: 7.5px;
+    left: 10%;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.Button:hover
+{
+    border-bottom: 2px solid #fff;
+    transform: translateY(-7px);
+}
+
+#Switcher:checked ~ .SwitchLabel
+{
+    background: gray;
+}
+
+#Switcher:checked ~ .SwitchLabel::after
+{
+    transform: translateX(120%);
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+@media (max-width: 768px)
+{
+    .Menu
+    {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .Icon
+    {
+        width: 80px;
+    }
+    .Button img
+    {
+        width: 50px;
+        margin: 0 5px;
+    }
+    .ActiveButton img
+    {
+        width: 50px;
+        margin: 0 5px;
+    }
+    .SwitchLabel
+    {
+        width: 60px;
+        height: 30px;
+    }
+    .SwitchLabel::after
+    {
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        left: 5px;
+    }
+    #Switcher:checked ~ .SwitchLabel::after
+    {
+        transform: translateX(30px);
+    }
+}
+
+@media (max-width: 500px)
+{
+    .Icon img
+    {
+        width: 90px;
+    }
+}
+
+@media (max-width: 455px)
+{
+    .Icon img
+    {
+        width: 80px;
+    }
+    }
+    .Button img
+    {
+        width: 40px;
+    }
+    .ActiveButton img
+    {
+        width: 40px;
+    }
+
+@media (max-width: 425px)
+{
+    .Icon img
+    {
+        width: 70px;
+    }
+    .Button img
+    {
+        width: 38px;
+    }
+    .ActiveButton img
+    {
+        width: 38px;
+    }
+}
+
+@media (max-width: 410px)
+{
+    .NavBar
+    {
+        padding: 0;
+    }
+    .Icon
+    {
+        margin: 0;
+    }
+    .Icon img
+    {
+        width: 70px;
+    }
+    .Button img
+    {
+        width: 35px;
+    }
+    .ActiveButton img
+    {
+        width: 35px;
+    }
+}
+
+@media (max-width: 365px)
+{
+    .Button img
+    {
+        width: 30px;
+    }
+    .ActiveButton img
+    {
+        width: 30px;
+    }
+    .SwitchLabel
+    {
+        width: 50px;
+        height: 25px;
+    }
+    .SwitchLabel::after
+    {
+        width: 15px;
+        height: 15px;
+        top: 5px;
+        left: 5px;
+    }
+    #Switcher:checked ~ .SwitchLabel::after
+    {
+        transform: translateX(25px);
+    }
+}
+
+@media (max-width: 320px)
+{
+    .Icon img
+    {
+        width: 65px;
+    }
+    .Button img
+    {
+        width: 25px;
+        margin: 0 3px;
+    }
+    .ActiveButton img
+    {
+        width: 25px;
+        margin: 0 3px;
+    }
+}

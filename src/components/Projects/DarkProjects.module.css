@@ -99,7 +99,7 @@
 
 .ComingSoonTitle
 {
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .Layer h2 a
@@ -143,13 +143,14 @@
 .Links img
 {
     width: 40px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.5s ease-out;
 }
 
 .ComingSoonIcons
 {
     margin: 0 10px 0 10px;
+    cursor: not-allowed;
 }
 
 .Card:hover .Layer

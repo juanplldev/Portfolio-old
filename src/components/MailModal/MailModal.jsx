@@ -1,12 +1,29 @@
 // Dependencies
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
 // Files
-import CloseButton from "../../img/CloseButtonWhite.png"
-import styles from "./MailModal.module.css";
+import ThemeContext from "../../contexts/ThemeContext";
+import CloseButtonWhite from "../../img/CloseButtonWhite.png"
+import CloseButtonDark from "../../img/CloseButton.png"
+import darkStyles from "./DarkMailModal.module.css";
+import lightStyles from "./LightMailModal.module.css";
 
 
 function MailModal({modalState, handleModalState})
 {
+    const {theme} = useContext(ThemeContext);
+    const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
+    
+    useEffect(() => {
+        if(theme === "Dark")
+        {
+            setStyles(darkStyles);
+        }
+        else if(theme === "Light")
+        {
+            setStyles(lightStyles);
+        };
+    }, [theme]);
+    
     if(modalState === true)
     {
         return(
@@ -14,7 +31,7 @@ function MailModal({modalState, handleModalState})
                 <div className={styles.Container}>
                     <div className={styles.Header}>
                         <h1>Send me an email</h1>
-                        <button onClick={handleModalState}><img src={CloseButton} alt="X" /></button>
+                        <button onClick={handleModalState}><img src={theme === "Dark" ? CloseButtonWhite : CloseButtonDark} alt="X" /></button>
                     </div>
                     
                     <div className={styles.Content}>
