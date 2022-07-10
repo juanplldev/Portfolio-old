@@ -1,0 +1,225 @@
+.LightProperty
+{
+    display: none;
+}
+
+.Background
+{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    z-index: -1;
+    background: transparent;
+}
+
+.Container
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    top: 69px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    animation: openModal 0.3s;
+    background: rgb(158, 155, 155);
+}
+
+.SwitcherContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+#Switcher
+{
+    display: none;
+}
+
+.SwitchLabel
+{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.966);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.SwitchLabel::after
+{
+    content: "";
+    position: absolute;
+    top: 7.5px;
+    left: 10%;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+#Switcher:checked ~ .SwitchLabel
+{
+    background: #fff;
+}
+
+#Switcher:checked ~ .SwitchLabel::after
+{
+    transform: translateX(120%);
+    background: #000;
+}
+
+@keyframes openModal
+{
+    0%
+    {
+        transform: translateX(100%);
+        opacity: 0.5;
+    }
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideGradient
+{
+    0%
+    {
+        background-position: -1000px;
+    }
+    100%
+    {
+        background-position: 2000px;
+    }
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+
+/* @media (max-width: 1440px)
+{
+    .Container
+    {
+        width: 1000px;
+        height: 500px;
+    }
+    .MailForm button
+    {
+        width: 230px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 1366px)
+{
+    .Container
+    {
+        width: 900px;
+        height: 450px;
+    }
+    .MailForm button
+    {
+        width: 230px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .Container
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .Header h1
+    {
+        font-size: 27px;
+    }
+    .TopInputs input
+    {
+        font-size: 18px;
+    }
+    .MailForm button
+    {
+        width: 150px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .MailForm textarea
+    {
+        font-size: 18px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .Header h1
+    {
+        font-size: 27px;
+    }
+    .Header img
+    {
+        width: 35px;
+    }
+    .TopInputs input
+    {
+        font-size: 16px;
+    }
+    .MailForm button
+    {
+        width: 130px;
+        height: 27px;
+        font-size: 16px;
+    }
+    .MailForm textarea
+    {
+        font-size: 16px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .Header h1
+    {
+        font-size: 22px;
+    }
+    .Header img
+    {
+        width: 30px;
+    }
+    .TopInputs input
+    {
+        font-size: 15px;
+    }
+    .MailForm button
+    {
+        width: 100px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .MailForm textarea
+    {
+        font-size: 15px;
+        height: 100px;
+    }
+} */

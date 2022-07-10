@@ -1,8 +1,3 @@
-.DarkProperty
-{
-    display: none;
-}
-
 .Container
 {
     display: block;
@@ -76,41 +71,30 @@
     transform: translateY(-7px);
 }
 
-.SwitcherContainer
+.MenuIcon
 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 55px;
+    height: 35px;
     margin: 0 10px 0 10px;
 }
 
-#Switcher
+#MenuButton
 {
     display: none;
 }
 
-.SwitchLabel
+.MenuButtonLabel
 {
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.966);
-    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/Menu.png");
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.SwitchLabel::after
-{
-    content: "";
-    position: absolute;
-    top: 7.5px;
-    left: 10%;
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border-radius: 100%;
     transition: 0.3s;
 }
 
@@ -120,14 +104,9 @@
     transform: translateY(-7px);
 }
 
-#Switcher:checked ~ .SwitchLabel
+#MenuButton:checked ~ .MenuButtonLabel
 {
-    background: gray;
-}
-
-#Switcher:checked ~ .SwitchLabel::after
-{
-    transform: translateX(120%);
+    transform: rotate(90deg);
 }
 
 /* MEDIA QUERIES BREAKPOINTS */

@@ -31,7 +31,9 @@ function MailModal({modalState, handleModalState})
                 <div className={styles.Container}>
                     <div className={styles.Header}>
                         <h1>Send me an email</h1>
-                        <button onClick={handleModalState}><img src={theme === "Dark" ? CloseButtonWhite : CloseButtonDark} alt="X" /></button>
+                        <button onClick={handleModalState}>
+                            <img src={theme === "Dark" ? CloseButtonWhite : CloseButtonDark} alt="X" />
+                        </button>
                     </div>
                     
                     <div className={styles.Content}>

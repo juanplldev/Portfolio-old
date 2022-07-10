@@ -2,6 +2,7 @@
 import React, {useContext, useEffect, useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 // Files
+import MenuModal from "../MenuModal/MenuModal.jsx";
 import ThemeContext from "../../contexts/ThemeContext";
 import {scrollToAbout, scrollToStack, scrollToProjects, scrollToContact} from "../../handlers/handlers";
 import CloseTagIcon from "../../img/CloseTagIcon.png";
@@ -16,8 +17,10 @@ function NavBar()
 {
     const navigate = useNavigate();
     
-    const {theme, setTheme} = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
     const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
+    
+    const [modalState, setModalState] = useState(false);
     
     const [height, setHeight] = useState(window.innerHeight);
     const [width, setWidth] = useState(window.innerWidth);
@@ -46,18 +49,9 @@ function NavBar()
         };
     }, [theme]);
     
-    function handleChangeTheme()
+    function handleModalState()
     {
-        if(theme === "Dark")
-        {
-            setTheme("Light");
-            window.localStorage.setItem("Theme", "Light");
-        }
-        else if(theme === "Light")
-        {
-            setTheme("Dark");
-            window.localStorage.setItem("Theme", "Dark");
-        };
+        setModalState(!modalState);
     };
     
     async function handleScrollAbout()
@@ -127,17 +121,14 @@ function NavBar()
                     </button>
                 </div>
                 
-                <div className={styles.SwitcherContainer}>
-                    {
-                        styles.LightProperty ?
-                        <input checked type="checkbox" id={styles.Switcher}/>
-                        :
-                        <input type="checkbox" id={styles.Switcher}/>
-                    }
-                    <label onClick={handleChangeTheme} htmlFor={styles.Switcher} className={styles.SwitchLabel}>
-                        <label htmlFor={styles.SwitchLabel} className={styles.SwitchLabelIcon}></label>
-                    </label>
+                <div className={styles.MenuIcon}>
+                    <input type="checkbox" id={styles.MenuButton}/>
+                    <label onClick={handleModalState} htmlFor={styles.MenuButton} className={styles.MenuButtonLabel}></label>
                 </div>
+                
+                <MenuModal
+                    modalState={modalState}
+                />
             </div>
         </div>
     );
