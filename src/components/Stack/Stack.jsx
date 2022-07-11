@@ -2,6 +2,7 @@
 import React, {useState, useEffect, useContext} from "react";
 // Files
 import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 import JavascriptWhite from "../../img/JavascriptWhite.png";
 import HTMLWhite from "../../img/HTMLWhite.png";
 import CSSWhite from "../../img/CSSWhite.png";
@@ -48,6 +49,8 @@ import lightStyles from "./LightStack.module.css";
 
 function Stack()
 {
+    const {language} = useContext(LanguageContext);
+    
     const {theme} = useContext(ThemeContext);
     const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
     
@@ -65,7 +68,13 @@ function Stack()
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>Stack</h1>
+                <h1>
+                    {
+                        language === "English" ? "Stack"
+                        :
+                        "Herramientas"
+                    }
+                </h1>
             </div>
             
             <div className={styles.StackContainer}>

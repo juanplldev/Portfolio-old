@@ -101,7 +101,7 @@
 
 .Button:hover
 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
     transform: translateY(-7px);
 }
 

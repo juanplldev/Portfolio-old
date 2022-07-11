@@ -2,6 +2,7 @@
 import React, {useState, useEffect, useContext} from "react";
 // Files
 import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 import VideogamesImg from "../../img/Videogames.png";
 import DigitalizArteImg from "../../img/DigitalizArte.png";
 import PortfolioImg from "../../img/Portfolio.png";
@@ -14,6 +15,8 @@ import lightStyles from "./LightProjects.module.css";
 
 function Projects()
 {
+    const {language} = useContext(LanguageContext);
+    
     const {theme} = useContext(ThemeContext);
     const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
     
@@ -31,7 +34,13 @@ function Projects()
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>Projects</h1>
+                <h1>
+                    {
+                        language === "English" ? "Projects"
+                        :
+                        "Proyectos"
+                    }
+                </h1>
             </div>
             
             <div className={styles.ProjectsContainer}>
@@ -40,9 +49,16 @@ function Projects()
                     
                     <div className={styles.Layer}>
                         <h2><a href="https://videogames-app-two.vercel.app">Videogames SPA</a></h2>
-                        <p>
-                            An encyclopedia of video games made as my individual project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
-                        </p>
+                        {
+                            language === "English" ?
+                            <p>
+                                An encyclopedia of video games made as my individual project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
+                            </p>
+                            :
+                            <p>
+                                Una enciclopedia de videojuegos hecha como mi proyecto individual para el bootcamp de <a href="https://www.soyhenry.com">Henry</a>.
+                            </p>
+                        }
                         
                         <div className={styles.Links}>
                             <a href="https://videogames-app-two.vercel.app"><img src={Website} alt="Website"/></a>
@@ -56,9 +72,18 @@ function Projects()
                     
                     <div className={styles.Layer}>
                         <h2><a href="https://pg-frontend-eight.vercel.app">DigitalizArte</a></h2>
-                        <p>
-                            An art e-commerce with a small social network system. Made with six more co-workers as final project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
-                        </p>
+                        {
+                            language === "English" ?
+                            <p>
+                                An art e-commerce with a small social network system.
+                                Made with six more co-workers as final project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
+                            </p>
+                            :
+                            <p>
+                                Un comercio de arte digital con un toque de red social.
+                                Realizado con seis compañeros más, como proyecto final para el bootcamp de <a href="https://www.soyhenry.com">Henry</a>.
+                            </p>
+                        }
                         
                         <div className={styles.Links}>
                             <a href="https://pg-frontend-eight.vercel.app"><img src={Website} alt="Website"/></a>
@@ -73,9 +98,21 @@ function Projects()
                     <img className={styles.Background} src={PortfolioImg} alt="Img"/>
                     
                     <div className={styles.Layer}>
-                        <h2><a href="https://juanpablollorente.vercel.app">Portfolio</a></h2>
+                        <h2>
+                            <a href="https://juanpablollorente.vercel.app">
+                                {
+                                    language === "English" ? "Portfolio"
+                                    :
+                                    "Portafolio"
+                                }
+                            </a>
+                        </h2>
                         <p>
-                            The current website.
+                            {
+                                language === "English" ? "The current website."
+                                :
+                                "El sitio actual."
+                            }
                         </p>
                         
                         <div className={styles.Links}>
@@ -93,10 +130,18 @@ function Projects()
                         {/* <h2><a href="">Smoker's Log</a></h2> */}
                         <h2 className={styles.ComingSoonTitle}>Smoker's Log</h2>
                         <p>
-                            A page to keep track of how many cigarettes you have been smoking.
+                            {
+                                language === "English" ? "A page to keep track of how many cigarettes you have been smoking."
+                                :
+                                "Una página para llevar un control sobre la cantidad de cigarrillos que estuviste fumando."
+                            }
                         </p>
                         <p>
-                            This website isn't available yet.
+                            {
+                                language === "English" ? "This website isn't available yet."
+                                :
+                                "Este sitio todavía no está disponible."
+                            }
                         </p>
                         
                         <div className={styles.Links}>

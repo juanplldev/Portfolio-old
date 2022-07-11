@@ -2,6 +2,7 @@
 import React, {useState, useEffect, useContext} from "react";
 // Files
 import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 import MailModal from "../MailModal/MailModal.jsx";
 import LinkedInRoundWhite from "../../img/LinkedInRoundWhite.png";
 import GitHubWhite from "../../img/GitHubWhite.png";
@@ -15,6 +16,8 @@ import lightStyles from "./LightContact.module.css";
 
 function Contact()
 {
+    const {language} = useContext(LanguageContext);
+    
     const {theme} = useContext(ThemeContext);
     const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
     
@@ -58,7 +61,13 @@ function Contact()
     return (
         <div className={styles.Container}>
             <div className={styles.Title}>
-                <h1>Contact</h1>
+                <h1>
+                    {
+                        language === "English" ? "Contact"
+                        :
+                        "Contacto"
+                    }
+                </h1>
             </div>
             
             <div className={styles.IconsContainer}>

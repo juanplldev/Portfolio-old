@@ -146,7 +146,7 @@
     animation: slideBackground 50s linear infinite;
 }
 
-.MailForm button:after
+.SendButton:after
 {
     content: "Send";
     display: flex;
@@ -155,7 +155,18 @@
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     border-radius: 5px;
-    /* background-color: gray; */
+    background-color: rgb(107, 106, 106);
+}
+
+.SendButtonSP:after
+{
+    content: "Enviar";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 5px;
     background-color: rgb(107, 106, 106);
 }
 

@@ -4,6 +4,7 @@ import {Link, useNavigate} from "react-router-dom";
 // Files
 import MenuModal from "../MenuModal/MenuModal.jsx";
 import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 import {scrollToAbout, scrollToStack, scrollToProjects, scrollToContact} from "../../handlers/handlers";
 import CloseTagIcon from "../../img/CloseTagIcon.png";
 import About from "../../img/About.png";
@@ -16,6 +17,8 @@ import lightStyles from "./LightNavBar.module.css";
 function NavBar()
 {
     const navigate = useNavigate();
+    
+    const {language} = useContext(LanguageContext);
     
     const {theme} = useContext(ThemeContext);
     const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
@@ -92,7 +95,9 @@ function NavBar()
                         {
                             width <= 550 ? <img src={About} alt="About" />
                             :
-                            "About"
+                            language === "English" ? "About me"
+                            :
+                            "Sobre mí"
                         }
                     </button>
                     
@@ -100,7 +105,9 @@ function NavBar()
                         {
                             width <= 550 ? <img src={Stack} alt="Stack" />
                             :
-                            "Stack"
+                            language === "English" ? "Stack"
+                            :
+                            "Herramientas"
                         }
                     </button>
                     
@@ -108,7 +115,9 @@ function NavBar()
                         {
                             width <= 550 ? <img src={Projects} alt="Projects" />
                             :
-                            "Projects"
+                            language === "English" ? "Projects"
+                            :
+                            "Proyectos"
                         }
                     </button>
                     
@@ -116,7 +125,9 @@ function NavBar()
                         {
                             width <= 550 ? <img src={Contact} alt="Contact" />
                             :
-                            "Contact"
+                            language === "English" ? "Contact"
+                            :
+                            "Contacto"
                         }
                     </button>
                 </div>

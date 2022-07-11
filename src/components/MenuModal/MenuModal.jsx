@@ -2,12 +2,15 @@
 import React, {useState, useEffect, useContext} from "react";
 // Files
 import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 import darkStyles from "./DarkMenuModal.module.css";
 import lightStyles from "./LightMenuModal.module.css";
 
 
 function MenuModal({modalState})
 {
+    const {language, setLanguage} = useContext(LanguageContext);
+    
     const {theme, setTheme} = useContext(ThemeContext);
     const [styles, setStyles] = useState(theme === "Dark" ? darkStyles : lightStyles);
     
@@ -36,25 +39,53 @@ function MenuModal({modalState})
         };
     };
     
+    function handleChangeLanguage()
+    {
+        if(language === "English")
+        {
+            setLanguage("Español");
+            window.localStorage.setItem("Language", "Español");
+        }
+        else if(language === "Español")
+        {
+            setLanguage("English");
+            window.localStorage.setItem("Language", "English");
+        };
+    };
+    
     if(modalState === true)
     {
         return(
             <div className={styles.Background}>
                 <div className={styles.Container}>
-                    <div className={styles.ButtonContainer}>
-                        <button>Language</button>
+                    <div className={styles.LanguageContainer}>
+                        <h3>
+                            {
+                                language === "English" ? "Language:"
+                                :
+                                "Idioma:"
+                            }
+                        </h3>
+                        <button className={styles.LanguageButton} onClick={handleChangeLanguage}>{language}</button>
                     </div>
                     
-                    <div className={styles.SwitcherContainer}>
+                    <div className={styles.ThemeContainer}>
+                        <h3>
+                            {
+                                language === "English" ? "Theme:"
+                                :
+                                "Tema:"
+                            }
+                        </h3>
                         {
-                            styles.LightProperty ?
-                            <input checked type="checkbox" id={styles.Switcher}/>
+                            language === "English" ?
+                            <button className={styles.LanguageButton} onClick={handleChangeTheme}>{theme}</button>
                             :
-                            <input type="checkbox" id={styles.Switcher}/>
+                            theme === "Dark" ?
+                            <button className={styles.LanguageButton} onClick={handleChangeTheme}>Oscuro</button>
+                            :
+                            <button className={styles.LanguageButton} onClick={handleChangeTheme}>Claro</button>
                         }
-                        <label onClick={handleChangeTheme} htmlFor={styles.Switcher} className={styles.SwitchLabel}>
-                            {/* <label htmlFor={styles.SwitchLabel} className={styles.SwitchLabelIcon}></label> */}
-                        </label>
                     </div>
                 </div>
             </div>
