@@ -42,8 +42,8 @@ function About()
                         language === "English" ? `I'm a 20 years old Full Stack Web Developer and Master Builder from Buenos Aires, Argentina.
                         Mainly oriented to the Back End, though i like Front End too.`
                         :
-                        `Soy un Desarrollador Web Full Stack y Maestro Mayor de Obras. Tengo 20 años y de Buenos Aires, Argentina.
-                        Estoy orientado principalmente al Back End aunque también me gusta el Front End.`
+                        `Soy un Desarrollador Web Full Stack y Maestro Mayor de Obras. Tengo 20 años y soy de Buenos Aires, Argentina.
+                        Estoy orientado principalmente al Back End aunque también me doy maña con el Front End.`
                     }
                 </p>
                 <p className={styles.P}>

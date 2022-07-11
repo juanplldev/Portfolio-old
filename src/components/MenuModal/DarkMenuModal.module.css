@@ -4,13 +4,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* left: 95%; */
     right: 0;
     top: 1px;
-    /* bottom: 91.8%; */
-    /* transform: translate(-50%, 50%); */
     z-index: -1;
     background: transparent;
 }
@@ -37,12 +32,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* width: 50px; */
+    width: auto;
     height: 60px;
-    /* background: red; */
 }
 
-.LanguageButton
+.Button
 {
     width: 80px;
     height: 27px;
@@ -61,11 +55,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* width: 50px; */
+    width: auto;
     height: 60px;
 }
 
-.LanguageButton:hover
+.Button:hover
 {
     background: rgba(100, 100, 100, 0.966);
 }
@@ -98,115 +92,34 @@
 
 /* MEDIA QUERIES BREAKPOINTS */
 
-/* @media (max-width: 1440px)
+@media (max-width: 425px)
 {
     .Container
     {
-        width: 1000px;
-        height: 500px;
+        width: 100px;
+        height: 140px;
+        font-size: 15px;
     }
-    .MailForm button
+    .Button
     {
-        width: 230px;
-        height: 35px;
-    }
-}
-
-@media (max-width: 1366px)
-{
-    .Container
-    {
-        width: 900px;
-        height: 450px;
-    }
-    .MailForm button
-    {
-        width: 230px;
-        height: 35px;
-    }
-}
-
-@media (max-width: 1024px)
-{
-    .Container
-    {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px)
-{
-    .Header h1
-    {
-        font-size: 27px;
-    }
-    .TopInputs input
-    {
-        font-size: 18px;
-    }
-    .MailForm button
-    {
-        width: 150px;
-        height: 30px;
-        font-size: 18px;
-    }
-    .MailForm textarea
-    {
-        font-size: 18px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 375px)
-{
-    .Header h1
-    {
-        font-size: 27px;
-    }
-    .Header img
-    {
-        width: 35px;
-    }
-    .TopInputs input
-    {
-        font-size: 16px;
-    }
-    .MailForm button
-    {
-        width: 130px;
-        height: 27px;
-        font-size: 16px;
-    }
-    .MailForm textarea
-    {
-        font-size: 16px;
-        height: 100px;
+        width: 70px;
+        height: 25px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 320px)
 {
-    .Header h1
+    .Container
     {
-        font-size: 22px;
+        width: 80px;
+        height: 120px;
+        font-size: 13px;
     }
-    .Header img
+    .Button
     {
-        width: 30px;
+        width: 60px;
+        height: 20px;
+        font-size: 13px;
     }
-    .TopInputs input
-    {
-        font-size: 15px;
-    }
-    .MailForm button
-    {
-        width: 100px;
-        height: 25px;
-        font-size: 15px;
-    }
-    .MailForm textarea
-    {
-        font-size: 15px;
-        height: 100px;
-    }
-} */
+}

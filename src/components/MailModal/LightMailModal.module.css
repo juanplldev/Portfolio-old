@@ -25,8 +25,7 @@
     border-radius: 10px;
     box-shadow: rgba(102, 97, 97, 0.2) 0px 7px 29px 0px;
     animation: openModal 0.5s;
-    /* background: linear-gradient(to right bottom, #736eff6b, #5affe65d); */
-    background: rgb(158, 155, 155);
+    background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.527);
 }
 
@@ -43,7 +42,6 @@
 
 .Header h1
 {
-    /* background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff); */
     background: linear-gradient(to right, #000, #3a3939d7, #3a3939d7, #000);
     background-clip: text;
     -webkit-background-clip: text;
@@ -155,7 +153,7 @@
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     border-radius: 5px;
-    background-color: rgb(107, 106, 106);
+    background-color: rgb(133, 131, 131);
 }
 
 .SendButtonSP:after
@@ -167,7 +165,7 @@
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     border-radius: 5px;
-    background-color: rgb(107, 106, 106);
+    background-color: rgb(133, 131, 131);
 }
 
 .Footer

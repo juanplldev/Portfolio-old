@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 // Files
 import ThemeContext from "../../contexts/ThemeContext";
 import LanguageContext from "../../contexts/LanguageContext";
-import Video from "../../img/LandingBackground.mp4";
+import DarkBackground from "../../img/LandingDarkBackground.mp4";
+import LightBackground from "../../img/LandingLightkBackground.mp4";
 import darkStyles from "./DarkLanding.module.css";
 import lightStyles from "./LightLanding.module.css";
 
@@ -61,7 +62,12 @@ function Landing()
             </div>
             
             <div className={styles.Background}>
-                <video autoPlay loop muted src={Video}></video>
+                {
+                    theme === "Dark" ?
+                    <video autoPlay loop muted src={DarkBackground}></video>
+                    :
+                    <video autoPlay loop muted src={LightBackground}></video>
+                }
             </div>
         </div>
     );

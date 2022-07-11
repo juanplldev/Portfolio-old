@@ -93,7 +93,7 @@ function NavBar()
                 <div className={styles.Menu}>
                     <button onClick={handleScrollAbout} className={homeLocation && actualHeight < aboutIndicator ? styles.ActiveButton : styles.Button}>
                         {
-                            width <= 550 ? <img src={About} alt="About" />
+                            width <= 750 ? <img src={About} alt="About" />
                             :
                             language === "English" ? "About me"
                             :
@@ -103,7 +103,7 @@ function NavBar()
                     
                     <button onClick={handleScrollStack} className={homeLocation && actualHeight >= aboutIndicator && actualHeight < stackIndicator ? styles.ActiveButton : styles.Button}>
                         {
-                            width <= 550 ? <img src={Stack} alt="Stack" />
+                            width <= 750 ? <img src={Stack} alt="Stack" />
                             :
                             language === "English" ? "Stack"
                             :
@@ -113,7 +113,7 @@ function NavBar()
                     
                     <button onClick={handleScrollProjects} className={homeLocation && actualHeight >= stackIndicator && actualHeight < projectsIndicator ? styles.ActiveButton : styles.Button}>
                         {
-                            width <= 550 ? <img src={Projects} alt="Projects" />
+                            width <= 750 ? <img src={Projects} alt="Projects" />
                             :
                             language === "English" ? "Projects"
                             :
@@ -123,7 +123,7 @@ function NavBar()
                     
                     <button onClick={handleScrollContact} className={homeLocation && actualHeight >= projectsIndicator && actualHeight < contactIndicator ? styles.ActiveButton : styles.Button}>
                         {
-                            width <= 550 ? <img src={Contact} alt="Contact" />
+                            width <= 750 ? <img src={Contact} alt="Contact" />
                             :
                             language === "English" ? "Contact"
                             :

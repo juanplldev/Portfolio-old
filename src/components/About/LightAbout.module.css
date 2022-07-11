@@ -26,7 +26,6 @@
 
 .Title h1
 {
-    /* background: linear-gradient(to right, #fff, #cfcfcfbb, #9d9fa3, #fff); */
     background: linear-gradient(to right, #000, #3a3939d7, #3a3939d7, #000);
     background-clip: text;
     -webkit-background-clip: text;

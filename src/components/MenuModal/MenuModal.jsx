@@ -66,7 +66,7 @@ function MenuModal({modalState})
                                 "Idioma:"
                             }
                         </h3>
-                        <button className={styles.LanguageButton} onClick={handleChangeLanguage}>{language}</button>
+                        <button className={styles.Button} onClick={handleChangeLanguage}>{language}</button>
                     </div>
                     
                     <div className={styles.ThemeContainer}>
@@ -79,12 +79,12 @@ function MenuModal({modalState})
                         </h3>
                         {
                             language === "English" ?
-                            <button className={styles.LanguageButton} onClick={handleChangeTheme}>{theme}</button>
+                            <button className={styles.Button} onClick={handleChangeTheme}>{theme}</button>
                             :
                             theme === "Dark" ?
-                            <button className={styles.LanguageButton} onClick={handleChangeTheme}>Oscuro</button>
+                            <button className={styles.Button} onClick={handleChangeTheme}>Oscuro</button>
                             :
-                            <button className={styles.LanguageButton} onClick={handleChangeTheme}>Claro</button>
+                            <button className={styles.Button} onClick={handleChangeTheme}>Claro</button>
                         }
                     </div>
                 </div>

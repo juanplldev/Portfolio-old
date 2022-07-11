@@ -21,7 +21,7 @@ export function scrollToProjects()
     if(window.innerWidth <= 1024)
     {
         window.scrollTo({
-            top: window.innerHeight * 3  - 70,
+            top: window.innerHeight * 3 - 70,
             left: 0,
             behavior: "smooth",
         });
@@ -29,7 +29,7 @@ export function scrollToProjects()
     else
     {
         window.scrollTo({
-            top: window.innerHeight * 2  - 70,
+            top: window.innerHeight * 2 - 70,
             left: 0,
             behavior: "smooth",
         });
@@ -41,7 +41,7 @@ export function scrollToContact()
     if(window.innerWidth <= 1024)
     {
         window.scrollTo({
-            top: window.innerHeight * 5 - 70,
+            top: window.innerHeight * 5,
             left: 0,
             behavior: "smooth",
         });

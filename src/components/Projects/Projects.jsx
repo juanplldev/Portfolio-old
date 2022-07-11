@@ -123,11 +123,9 @@ function Projects()
                 </div>
                 
                 <div className={styles.Card}>
-                    {/* <img className={styles.Background} src={PortfolioImg} alt="Img"/> */}
                     <video className={styles.Background} autoPlay loop muted src={ComingSoonVideo}></video>
                     
                     <div className={styles.Layer}>
-                        {/* <h2><a href="">Smoker's Log</a></h2> */}
                         <h2 className={styles.ComingSoonTitle}>Smoker's Log</h2>
                         <p>
                             {
@@ -145,9 +143,7 @@ function Projects()
                         </p>
                         
                         <div className={styles.Links}>
-                            {/* <a href=""><img src={Website} alt="Website"/></a> */}
                             <img className={styles.ComingSoonIcons} src={Website} alt="Website"/>
-                            {/* <a href=""><img src={GitHubWhite} alt="GitHub"/></a> */}
                             <img className={styles.ComingSoonIcons} src={GitHubWhite} alt="GitHub"/>
                         </div>
                     </div>

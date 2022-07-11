@@ -39,7 +39,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    min-width: 40%;
     margin-top: 10px;
 }
 
@@ -54,12 +54,14 @@
     font-size: 22px;
     font-weight: bold;
     transition: 0.2s;
+    margin: 0 10px;
 }
 
 .ActiveButton
 {
     width: fit-content;
     height: fit-content;
+    margin: 0 10px;
     padding: 5px;
     border: none;
     cursor: pointer;
@@ -94,6 +96,9 @@
     width: 100%;
     height: 100%;
     background: url("../../img/Menu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -111,14 +116,6 @@
 
 /* MEDIA QUERIES BREAKPOINTS */
 
-@media (max-width: 768px)
-{
-    .Menu
-    {
-        width: fit-content;
-    }
-}
-
 @media (max-width: 550px)
 {
     .Icon
@@ -135,22 +132,6 @@
         width: 50px;
         margin: 0 5px;
     }
-    .SwitchLabel
-    {
-        width: 60px;
-        height: 30px;
-    }
-    .SwitchLabel::after
-    {
-        width: 20px;
-        height: 20px;
-        top: 5px;
-        left: 5px;
-    }
-    #Switcher:checked ~ .SwitchLabel::after
-    {
-        transform: translateX(30px);
-    }
 }
 
 @media (max-width: 500px)
@@ -159,10 +140,23 @@
     {
         width: 90px;
     }
+    .Button
+    {
+        margin: 0;
+    }
+    .MenuButtonLabel
+    {
+        width: 50px;
+    }
 }
 
 @media (max-width: 455px)
 {
+    .Icon
+    {
+        margin: 0;
+        margin-left: 5px;
+    }
     .Icon img
     {
         width: 80px;
@@ -190,6 +184,15 @@
     .ActiveButton img
     {
         width: 38px;
+    }
+    .MenuIcon
+    {
+        margin: 0;
+    }
+    .MenuButtonLabel
+    {
+        width: 40px;
+        height: 30px;
     }
 }
 
@@ -227,21 +230,10 @@
     {
         width: 30px;
     }
-    .SwitchLabel
+    .MenuButtonLabel
     {
-        width: 50px;
+        width: 35px;
         height: 25px;
-    }
-    .SwitchLabel::after
-    {
-        width: 15px;
-        height: 15px;
-        top: 5px;
-        left: 5px;
-    }
-    #Switcher:checked ~ .SwitchLabel::after
-    {
-        transform: translateX(25px);
     }
 }
 
@@ -260,5 +252,10 @@
     {
         width: 25px;
         margin: 0 3px;
+    }
+    .MenuButtonLabel
+    {
+        width: 30px;
+        height: 20px;
     }
 }

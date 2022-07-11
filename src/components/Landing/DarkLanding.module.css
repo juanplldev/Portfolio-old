@@ -40,7 +40,7 @@
     color: #fff;
     cursor: pointer;
     box-shadow: 1px 1px 30px -12px;
-    transition: all;
+    transition: all 1s ease-in-out;
     overflow: hidden;
 }
 
@@ -55,12 +55,6 @@
     background: linear-gradient(to right, #5affe6b0, #736effa9);
     box-shadow: 1px 1px 30px -6px;
     z-index: 1;
-    transition: all 1s ease-in-out;
-}
-
-.Continue:hover:after
-{
-    left: 0;
     transition: all 1s ease-in-out;
 }
 
@@ -81,6 +75,11 @@
     transform: translateX(-50%) translateY(-50%);
     transition: 2s;
     z-index: -1;
+}
+
+.Continue:hover:after
+{
+    left: 0;
 }
 
 .Button:hover ~ .Background video
