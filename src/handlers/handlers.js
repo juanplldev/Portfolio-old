@@ -10,7 +10,7 @@ export function scrollToAbout()
 export function scrollToStack()
 {
     window.scrollTo({
-        top: window.innerHeight - 75,
+        top: window.innerHeight,
         left: 0,
         behavior: "smooth",
     });
@@ -21,7 +21,7 @@ export function scrollToProjects()
     if(window.innerWidth <= 1024)
     {
         window.scrollTo({
-            top: window.innerHeight * 3 - 80,
+            top: window.innerHeight * 3,
             left: 0,
             behavior: "smooth",
         });
