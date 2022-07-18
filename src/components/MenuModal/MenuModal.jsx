@@ -87,6 +87,20 @@ function MenuModal({modalState})
                             <button className={styles.Button} onClick={handleChangeTheme}>Claro</button>
                         }
                     </div>
+                    
+                    <div className={styles.ResumeContainer}>
+                        {
+                            <button className={styles.Button}>
+                                <a href="https://juanpablollorente-cv.vercel.app">
+                                    {
+                                        language === "English" ? "Resume"
+                                        :
+                                        "CV"
+                                    }
+                                </a>
+                            </button>
+                        }
+                    </div>
                 </div>
             </div>
         );
