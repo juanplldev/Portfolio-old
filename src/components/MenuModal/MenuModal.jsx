@@ -91,7 +91,7 @@ function MenuModal({modalState})
                     <div className={styles.ResumeContainer}>
                         {
                             <button className={styles.Button}>
-                                <a href="https://juanpablollorente-cv.vercel.app">
+                                <a href="https://juanpll-cv.vercel.app">
                                     {
                                         language === "English" ? "Resume"
                                         :
