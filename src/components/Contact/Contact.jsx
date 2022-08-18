@@ -72,7 +72,7 @@ function Contact()
             
             <div className={styles.IconsContainer}>
                 <div className={styles.Icon}>
-                    <a href="https://www.linkedin.com/in/juan-pablo-llorente/">
+                    <a href="https://www.linkedin.com/in/juanpll">
                         <img src={theme === "Dark" ? LinkedInRoundWhite : LinkedInRoundBlack} alt="LinkedIn" />
                     </a>
                 </div>
