@@ -17,6 +17,7 @@ import GitWhite from "../../img/GitWhite.png";
 import HerokuWhite from "../../img/HerokuWhite.png";
 import VercelWhite from "../../img/VercelWhite.png";
 import JWTWhite from "../../img/JWTWhite.png";
+import ExpoWhite from "../../img/ExpoWhite.png";
 import GoogleWhite from "../../img/GoogleWhite.png";
 import VisualStudioCodeWhite from "../../img/VisualStudioCodeWhite.png";
 import PhotoshopWhite from "../../img/PhotoshopWhite.png";
@@ -37,6 +38,7 @@ import GitBlack from "../../img/Git.png";
 import HerokuBlack from "../../img/Heroku.png";
 import VercelBlack from "../../img/Vercel.png";
 import JWTBlack from "../../img/JWT.png";
+import ExpoBlack from "../../img/Expo.png";
 import GoogleBlack from "../../img/Google.png";
 import VisualStudioCodeBlack from "../../img/VisualStudioCode.png";
 import PhotoshopBlack from "../../img/Photoshop.png";
@@ -81,7 +83,7 @@ function Stack()
                 <section className={styles.Stack}>
                     <div className={styles.Icon}>
                         <a href="https://www.javascript.com">
-                            <img src={theme === "Dark" ? JavascriptWhite : JavascriptBlack} alt="Javascript" />
+                            <img src={theme === "Dark" ? JavascriptWhite : JavascriptBlack} alt="JavaScript" />
                             <p>JavaScript</p>
                         </a>
                     </div>
@@ -104,6 +106,13 @@ function Stack()
                         <a href="https://es.reactjs.org">
                             <img src={theme === "Dark" ? ReactWhite : ReactBlack} alt="React" />
                             <p>React</p>
+                        </a>
+                    </div>
+                    
+                    <div className={styles.Icon}>
+                        <a href="https://reactnative.dev">
+                            <img src={theme === "Dark" ? ReactWhite : ReactBlack} alt="React Native" />
+                            <p>React Native</p>
                         </a>
                     </div>
                     
@@ -176,6 +185,13 @@ function Stack()
                         <a href="https://jwt.io">
                             <img src={theme === "Dark" ? JWTWhite : JWTBlack} alt="Json Web Tokens" />
                             <p>Json Web Tokens</p>
+                        </a>
+                    </div>
+                    
+                    <div className={styles.Icon}>
+                        <a href="https://expo.dev">
+                            <img src={theme === "Dark" ? ExpoWhite : ExpoBlack} alt="Expo" />
+                            <p>Expo</p>
                         </a>
                     </div>
                     

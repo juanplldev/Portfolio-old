@@ -6,6 +6,7 @@ import LanguageContext from "../../contexts/LanguageContext";
 import VideogamesImg from "../../img/Videogames.png";
 import DigitalizArteImg from "../../img/DigitalizArte.png";
 import PortfolioImg from "../../img/Portfolio.png";
+import CryptoMarketImg from "../../img/CryptoMarket.png";
 import ComingSoonVideo from "../../img/ComingSoon.mp4";
 import GitHubWhite from "../../img/GitHubWhite.png";
 import Website from "../../img/Website.png";
@@ -123,6 +124,34 @@ function Projects()
                 </div>
                 
                 <div className={styles.Card}>
+                    <img className={styles.Background} src={CryptoMarketImg} alt="Img"/>
+                    
+                    <div className={styles.Layer}>
+                        <h2>
+                            <a href="https://getcryptomarket.vercel.app">
+                                {
+                                    language === "English" ? "Crypto Market"
+                                    :
+                                    "Crypto Market"
+                                }
+                            </a>
+                        </h2>
+                        <p>
+                            {
+                                language === "English" ? "An app to see the crypto prices, made for practice."
+                                :
+                                "Una aplicación para ver los precios de las criptomonedas, hecha para practicar."
+                            }
+                        </p>
+                        
+                        <div className={styles.Links}>
+                            <a href="https://getcryptomarket.vercel.app"><img src={Website} alt="Website"/></a>
+                            <a href="https://github.com/JuanPablo-Llorente/CryptoMarket"><img src={GitHubWhite} alt="GitHub"/></a>
+                        </div>
+                    </div>
+                </div>
+                
+                {/* <div className={styles.Card}>
                     <video className={styles.Background} autoPlay loop muted src={ComingSoonVideo}></video>
                     
                     <div className={styles.Layer}>
@@ -147,7 +176,7 @@ function Projects()
                             <img className={styles.ComingSoonIcons} src={GitHubWhite} alt="GitHub"/>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
