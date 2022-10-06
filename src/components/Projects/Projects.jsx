@@ -49,21 +49,21 @@ function Projects()
                     <img className={styles.Background} src={VideogamesImg} alt="Img"/>
                     
                     <div className={styles.Layer}>
-                        <h2><a href="https://videogames-app-two.vercel.app">Videogames SPA</a></h2>
+                        <h2><a href="https://videogames-app-two.vercel.app" target="_blank" rel="noopener noreferrer">Videogames SPA</a></h2>
                         {
                             language === "English" ?
                             <p>
-                                An encyclopedia of video games made as my individual project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
+                                An encyclopedia of video games made as my individual project for <a href="https://www.soyhenry.com" target="_blank" rel="noopener noreferrer">Henry's</a> bootcamp.
                             </p>
                             :
                             <p>
-                                Una enciclopedia de videojuegos hecha como mi proyecto individual para el bootcamp de <a href="https://www.soyhenry.com">Henry</a>.
+                                Una enciclopedia de videojuegos hecha como mi proyecto individual para el bootcamp de <a href="https://www.soyhenry.com" target="_blank" rel="noopener noreferrer">Henry</a>.
                             </p>
                         }
                         
                         <div className={styles.Links}>
-                            <a href="https://videogames-app-two.vercel.app"><img src={Website} alt="Website"/></a>
-                            <a href="https://github.com/JuanPablo-Llorente/PI-Videogames-main"><img src={GitHubWhite} alt="GitHub"/></a>
+                            <a href="https://videogames-app-two.vercel.app" target="_blank" rel="noopener noreferrer"><img src={Website} alt="Website"/></a>
+                            <a href="https://github.com/JuanPablo-Llorente/PI-Videogames-main" target="_blank" rel="noopener noreferrer"><img src={GitHubWhite} alt="GitHub"/></a>
                         </div>
                     </div>
                 </div>
@@ -72,23 +72,23 @@ function Projects()
                     <img className={styles.Background} src={DigitalizArteImg} alt="Img"/>
                     
                     <div className={styles.Layer}>
-                        <h2><a href="https://pg-frontend-eight.vercel.app">DigitalizArte</a></h2>
+                        <h2><a href="https://pg-frontend-eight.vercel.app" target="_blank" rel="noopener noreferrer">DigitalizArte</a></h2>
                         {
                             language === "English" ?
                             <p>
                                 An art e-commerce with a small social network system.
-                                Made with six more co-workers as final project for <a href="https://www.soyhenry.com">Henry's</a> bootcamp.
+                                Made with six more co-workers as final project for <a href="https://www.soyhenry.com" target="_blank" rel="noopener noreferrer">Henry's</a> bootcamp.
                             </p>
                             :
                             <p>
                                 Un comercio de arte digital con un toque de red social.
-                                Realizado con seis compañeros más, como proyecto final para el bootcamp de <a href="https://www.soyhenry.com">Henry</a>.
+                                Realizado con seis compañeros más, como proyecto final para el bootcamp de <a href="https://www.soyhenry.com" target="_blank" rel="noopener noreferrer">Henry</a>.
                             </p>
                         }
                         
                         <div className={styles.Links}>
-                            <a href="https://pg-frontend-eight.vercel.app"><img src={Website} alt="Website"/></a>
-                            <a href="https://github.com/BugalloF/PG-Backend"><img src={GitHubWhite} alt="GitHub"/></a>
+                            <a href="https://pg-frontend-eight.vercel.app" target="_blank" rel="noopener noreferrer"><img src={Website} alt="Website"/></a>
+                            <a href="https://github.com/BugalloF/PG-Backend" target="_blank" rel="noopener noreferrer"><img src={GitHubWhite} alt="GitHub"/></a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ function Projects()
                     
                     <div className={styles.Layer}>
                         <h2>
-                            <a href="https://juanpablollorente.vercel.app">
+                            <a href="https://juanpablollorente.vercel.app" target="_blank" rel="noopener noreferrer">
                                 {
                                     language === "English" ? "Portfolio"
                                     :
@@ -117,8 +117,8 @@ function Projects()
                         </p>
                         
                         <div className={styles.Links}>
-                            <a href="https://juanpablollorente.vercel.app"><img src={Website} alt="Website"/></a>
-                            <a href="https://github.com/JuanPablo-Llorente/Portfolio"><img src={GitHubWhite} alt="GitHub"/></a>
+                            <a href="https://juanpablollorente.vercel.app" target="_blank" rel="noopener noreferrer"><img src={Website} alt="Website"/></a>
+                            <a href="https://github.com/JuanPablo-Llorente/Portfolio" target="_blank" rel="noopener noreferrer"><img src={GitHubWhite} alt="GitHub"/></a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ function Projects()
                     
                     <div className={styles.Layer}>
                         <h2>
-                            <a href="https://getcryptomarket.vercel.app">
+                            <a href="https://getcryptomarket.vercel.app" target="_blank" rel="noopener noreferrer">
                                 {
                                     language === "English" ? "Crypto Market"
                                     :
@@ -145,8 +145,8 @@ function Projects()
                         </p>
                         
                         <div className={styles.Links}>
-                            <a href="https://getcryptomarket.vercel.app"><img src={Website} alt="Website"/></a>
-                            <a href="https://github.com/JuanPablo-Llorente/CryptoMarket"><img src={GitHubWhite} alt="GitHub"/></a>
+                            <a href="https://getcryptomarket.vercel.app" target="_blank" rel="noopener noreferrer"><img src={Website} alt="Website"/></a>
+                            <a href="https://github.com/JuanPablo-Llorente/CryptoMarket" target="_blank" rel="noopener noreferrer"><img src={GitHubWhite} alt="GitHub"/></a>
                         </div>
                     </div>
                 </div>

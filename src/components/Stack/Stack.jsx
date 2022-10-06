@@ -82,77 +82,77 @@ function Stack()
             <div className={styles.StackContainer}>
                 <section className={styles.Stack}>
                     <div className={styles.Icon}>
-                        <a href="https://www.javascript.com">
+                        <a href="https://www.javascript.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? JavascriptWhite : JavascriptBlack} alt="JavaScript" />
                             <p>JavaScript</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML">
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? HTMLWhite : HTMLBlack} alt="HTML" />
                             <p>HTML</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://developer.mozilla.org/es/docs/Web/CSS">
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? CSSWhite : CSSBlack} alt="CSS" />
                             <p>CSS</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://es.reactjs.org">
+                        <a href="https://es.reactjs.org" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? ReactWhite : ReactBlack} alt="React" />
                             <p>React</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://reactnative.dev">
+                        <a href="https://reactnative.dev" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? ReactWhite : ReactBlack} alt="React Native" />
                             <p>React Native</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://redux.js.org">
+                        <a href="https://redux.js.org" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? ReduxWhite : ReduxBlack} alt="Redux" />
                             <p>Redux</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://nodejs.org">
+                        <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? NodeWhite : NodeBlack} alt="Node" />
                             <p>Node</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://expressjs.com">
+                        <a href="https://expressjs.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? ExpressWhite : ExpressBlack} alt="Express" />
                             <p>Express</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://www.postgresql.org">
+                        <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? PostgreSQLWhite : PostgreSQLBlack} alt="PostgreSQL" />
                             <p>PostgreSQL</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://sequelize.org">
+                        <a href="https://sequelize.org" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? SequelizeWhite : SequelizeBlack} alt="Sequelize" />
                             <p>Sequelize</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://www.postman.com">
+                        <a href="https://www.postman.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? PostmanWhite : PostmanBlack} alt="Postman" />
                             <p>Postman</p>
                         </a>
@@ -161,77 +161,77 @@ function Stack()
                 
                 <section className={styles.Stack}>
                     <div className={styles.Icon}>
-                        <a href="https://git-scm.com">
+                        <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? GitWhite : GitBlack} alt="Git" />
                             <p>Git</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://heroku.com">
+                        <a href="https://heroku.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? HerokuWhite : HerokuBlack} alt="Heroku" />
                             <p>Heroku</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://vercel.com">
+                        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? VercelWhite : VercelBlack} alt="Vercel" />
                             <p>Vercel</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://jwt.io">
+                        <a href="https://jwt.io" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? JWTWhite : JWTBlack} alt="Json Web Tokens" />
                             <p>Json Web Tokens</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://expo.dev">
+                        <a href="https://expo.dev" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? ExpoWhite : ExpoBlack} alt="Expo" />
                             <p>Expo</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://cloud.google.com/apis">
+                        <a href="https://cloud.google.com/apis" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? GoogleWhite : GoogleBlack} alt="Google API" />
                             <p>Google API</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://code.visualstudio.com">
+                        <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? VisualStudioCodeWhite : VisualStudioCodeBlack} alt="Visual Studio Code" />
                             <p>Visual Studio Code</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://www.adobe.com/ar/products/photoshop.html">
+                        <a href="https://www.adobe.com/ar/products/photoshop.html" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? PhotoshopWhite : PhotoshopBlack} alt="Photoshop" />
                             <p>Photoshop</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://github.com">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? GitHubWhite : GitHubBlack} alt="GitHub" />
                             <p>GitHub</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://slack.com">
+                        <a href="https://slack.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? SlackWhite : SlackBlack} alt="Slack" />
                             <p>Slack</p>
                         </a>
                     </div>
                     
                     <div className={styles.Icon}>
-                        <a href="https://trello.com">
+                        <a href="https://trello.com" target="_blank" rel="noopener noreferrer">
                             <img src={theme === "Dark" ? TrelloWhite : TrelloBlack} alt="Trello" />
                             <p>Trello</p>
                         </a>
