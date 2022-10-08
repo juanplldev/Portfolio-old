@@ -49,7 +49,7 @@ function Projects()
                     <img className={styles.Background} src={VideogamesImg} alt="Img"/>
                     
                     <div className={styles.Layer}>
-                        <h2><a href="https://videogames-app-two.vercel.app" target="_blank" rel="noopener noreferrer">Videogames SPA</a></h2>
+                        <h2><a href="https://videogamespi.vercel.app" target="_blank" rel="noopener noreferrer">Videogames SPA</a></h2>
                         {
                             language === "English" ?
                             <p>
@@ -62,8 +62,8 @@ function Projects()
                         }
                         
                         <div className={styles.Links}>
-                            <a href="https://videogames-app-two.vercel.app" target="_blank" rel="noopener noreferrer"><img src={Website} alt="Website"/></a>
-                            <a href="https://github.com/JuanPablo-Llorente/PI-Videogames-main" target="_blank" rel="noopener noreferrer"><img src={GitHubWhite} alt="GitHub"/></a>
+                            <a href="https://videogamespi.vercel.app" target="_blank" rel="noopener noreferrer"><img src={Website} alt="Website"/></a>
+                            <a href="https://github.com/JuanPablo-Llorente/PI-Videogames" target="_blank" rel="noopener noreferrer"><img src={GitHubWhite} alt="GitHub"/></a>
                         </div>
                     </div>
                 </div>
