@@ -83,7 +83,7 @@ function Contact()
                 </div>
                 
                 <div className={styles.Icon}>
-                    <a href="https://github.com/JuanPablo-Llorente">
+                    <a href="https://github.com/juanplldev">
                         <img src={theme === "Dark" ? GitHubWhite : GitHubBlack} alt="GitHub" />
                     </a>
                 </div>
