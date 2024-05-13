@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.26.1",
-    "dotenv": "^16.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^6.3.0",
+    "axios": "0.26.1",
+    "dotenv": "16.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router-dom": "6.3.0",
     "react-scripts": "4.0.0",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "2.1.2"
   },
   "scripts": {
     "start": "set PORT=4000 && react-scripts start",
